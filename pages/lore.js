@@ -44,13 +44,26 @@ const lorePage = `
     <section class="lore-content-section">
       <h1>NOWADAYS</h1>
       <p>Five years later, the Void Echoes have multiplied and Integrity continues his patient work of unmaking.</p>
-      
-      <div class="warning-box">
-        <h2>WARNING TO ALL EXPLORATION TEAMS</h2>
-        <p class="italic-text">The Shattered Territories are not a challenge to overcome, they are a tomb that's still filling.</p>
-        <p>If you see structures made of impossible materials, <strong class="danger">RUN</strong>. If you hear sounds that don't belong, <strong class="danger">HIDE</strong>. If you meet someone who seems wrong, <strong class="danger">DON'T TRUST THEM.</strong></p>
-        <p>And if you ever, <strong><em>EVER</em></strong> see the moon begin to crack… <strong>Leave this region and never return.</strong></p>
-        <p class="italic-text">Because Arceus is always watching. And he's so very bored of what he built.</p>
+      <p>This is where your story starts.</p> 
+    </section>
+    
+      <section class="warning-section">
+      <h2 class="warning-title">⚠ WARNING TO ALL EXPLORATION TEAMS</h2>
+      <div class="warning-content">
+        <p class="warning-intro">The Shattered Territories are not a challenge to overcome, they are a tomb that's still filling.</p>
+        
+        <div class="warning-rules">
+          <p>If you see structures made of impossible materials, <strong class="danger">RUN</strong>.</p>
+          <p>If you hear sounds that don't belong, <strong class="danger">HIDE</strong>.</p>
+          <p>If you meet someone who seems wrong, <strong class="danger">DON'T TRUST THEM.</strong></p>
+          <p>And if you ever, <em><strong>EVER</strong></em> see the moon begin to crack…</p>
+          <p class="final-warning"><em>Leave this region and never return.</em></p>
+        </div>
+
+        <div class="warning-footer">
+          <p><em>Because Arceus is always watching.<br>
+          And he's so very bored of what he built.</em></p>
+        </div>
       </div>
     </section>
     

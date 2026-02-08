@@ -107,7 +107,7 @@ body {
 
 .hero {
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 60px 20px 10px;
     position: relative;
     z-index: 2;
 }
@@ -356,7 +356,7 @@ h2 {
 
 .quote-section {
     text-align: center;
-    margin: 60px 0;
+    margin: 0 0 60px 0;
 }
 
 .main-quote {
@@ -759,9 +759,10 @@ footer p {
 .lore-content-section {
     margin-bottom: 60px;
     padding: 40px;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
+    background: rgba(20, 15, 30, 0.7);
+    border: 1px solid var(--accent-purple);
     border-radius: 12px;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
 }
 
 .lore-content-section h1 {
@@ -791,11 +792,12 @@ footer p {
 }
 
 .team-block {
-    background: var(--bg-tertiary);
+    background: rgba(25, 20, 35, 0.7);
     padding: 20px;
     margin: 20px 0;
     border-left: 4px solid var(--accent-purple);
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.1);
 }
 
 .team-block h3 {
@@ -829,6 +831,7 @@ footer p {
     border-radius: 12px;
     margin-bottom: 30px;
     text-align: center;
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
 }
 
 .trust-text {
@@ -868,13 +871,14 @@ footer p {
 
 .spoiler-box {
     position: relative;
-    background: var(--bg-tertiary);
-    border: 2px solid var(--accent-red);
+    background: rgba(25, 20, 35, 0.7);
+    border: 1px solid var(--accent-red);
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
     cursor: pointer;
     transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.1);
 }
 
 .spoiler-overlay {
@@ -934,8 +938,8 @@ footer p {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border-color);
+    background: rgba(25, 20, 35, 0.7);
+    border: 1px solid var(--accent-purple);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -970,19 +974,20 @@ footer p {
 }
 
 .category-card {
-    background: var(--bg-secondary);
-    border: 2px solid var(--border-color);
+    background: rgba(20, 15, 30, 0.7);
+    border: 1px solid var(--accent-purple);
     border-radius: 12px;
     padding: 60px 40px;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s;
     cursor: pointer;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
 }
 
 .category-card:hover {
-    border-color: var(--accent-purple);
-    box-shadow: 0 8px 30px var(--glow-purple);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 30px var(--glow-purple);
     transform: translateY(-5px);
 }
 
