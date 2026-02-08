@@ -27,13 +27,21 @@
                 </div>
             </div>
             <div class="submenu">
-                <a href="#rp-rules" onclick="setActive('rp-rules')" data-page="rp-rules">About</a>
+                <a href="#about" onclick="setActive('about')" data-page="about">About</a>
                 <div class="submenu-items">
-                    <a href="#rp-rules" onclick="setActive('rp-rules')" data-page="rp-rules">RP Rules</a>
+                    <a href="#roleplay" onclick="setActive('roleplay')" data-page="roleplay">Roleplay</a>
                     <a href="#character-creation" onclick="setActive('character-creation')" data-page="character-creation">Character Creation</a>
                 </div>
             </div>
         </nav>
+    </div>
+
+    <div class="search-container">
+        <div class="search-icon" onclick="toggleSearch()">🔎︎</div>
+        <div id="searchBox" class="search-box">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="handleSearch(event)">
+            <div id="searchResults" class="search-results"></div>
+        </div>
     </div>
 
     <main id="app"></main>
@@ -42,6 +50,18 @@
     <script src="pages/lore.js"></script>
     <script src="pages/archives.js"></script>
     <script src="pages/about.js"></script>
+    <script src="pages/evolutions.js"></script>
+    <script src="pages/gimmicks.js"></script>
+    <script src="pages/terrains.js"></script>
+    <script src="pages/character-rules.js"></script>
+    <script src="pages/progression.js"></script>
+    <script src="pages/factions.js"></script>
+    <script src="pages/parliament.js"></script>
+    <script src="pages/splinters.js"></script>
+    <script src="pages/team-creation.js"></script>
+    <script src="pages/noteworthies.js"></script>
+    <script src="pages/legendaries.js"></script>
+    <script src="pages/combat.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
