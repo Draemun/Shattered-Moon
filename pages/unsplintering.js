@@ -1,11 +1,6 @@
 const unsplinteringPage = `
   <div class="container">
     <section class="lore-content-section">
-      <h1>UNSPLINTERING</h1>
-      <p>There are three known methods to reverse the effects of splintering.</p>
-    </section>
-
-    <section class="lore-content-section">
       <h1>NEXUS CORES</h1>
       <p>Nexus Cores are the product of Void Echoes charged with specific moves. The expertise and power required means that usually only the Guild can access those resources. Most individual Pokémon simply cannot access those resources due to the risks (despite Void Echoes being findable by anyone).</p>
       
