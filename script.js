@@ -17,6 +17,7 @@ const pages = {
   'evolution-forms': evolutionFormsPage,
   gimmicks: gimmicksPage,
   terrains: terrainsPage,
+  unsplintering: unsplinteringPage,
   'character-creation': characterCreationPage,
   'character-rules': characterRulesPage,
   progression: progressionPage,
@@ -29,9 +30,62 @@ const pages = {
   combat: combatPage
 }
 
+const keywordLinks = {
+  'soul splinter': 'splinters',
+  'splinter': 'splinters',
+  'echelon': 'noteworthies',
+  'praetor': 'noteworthies',
+  'archon': 'noteworthies',
+  'echo of miralen': 'echo-miralen',
+  'entity log': 'entity-log',
+  'faraway': 'entity-faraway',
+  'found': 'entity-found',
+  'thorn weaver': 'entity-thorn-weaver',
+  'combat': 'combat',
+  'gimmick': 'gimmicks',
+  'terrain': 'terrains',
+  'evolution': 'evolution-forms',
+  'legendary': 'legendaries'
+}
+
+function linkifyKeywords(content) {
+  const tempDiv = document.createElement('div')
+  tempDiv.innerHTML = content
+  
+  const walker = document.createTreeWalker(tempDiv, NodeFilter.SHOW_TEXT, null, false)
+  const nodesToReplace = []
+  
+  while (walker.nextNode()) {
+    nodesToReplace.push(walker.currentNode)
+  }
+  
+  nodesToReplace.forEach(node => {
+    let text = node.nodeValue
+    let modified = false
+    
+    Object.keys(keywordLinks).forEach(keyword => {
+      const regex = new RegExp(`\\b(${keyword})\\b`, 'gi')
+      if (regex.test(text)) {
+        text = text.replace(regex, `<a href="#${keywordLinks[keyword.toLowerCase()]}" class="keyword-link">$1</a>`)
+        modified = true
+      }
+    })
+    
+    if (modified) {
+      const span = document.createElement('span')
+      span.innerHTML = text
+      node.parentNode.replaceChild(span, node)
+    }
+  })
+  
+  return tempDiv.innerHTML
+}
+
 function router() {
   const hash = location.hash.slice(1) || 'home'
-  document.getElementById('app').innerHTML = pages[hash] || pages.home
+  let content = pages[hash] || pages.home
+  document.getElementById('app').innerHTML = content
+  linkifyKeywords(document.getElementById('app'))
   updateIndicator(hash)
 }
 
@@ -81,6 +135,7 @@ const pageIndex = {
   'evolution-forms': { title: 'Evolution & Forms', content: evolutionFormsPage },
   'gimmicks': { title: 'Gimmicks', content: gimmicksPage },
   'terrains': { title: 'Terrains', content: terrainsPage },
+  'unsplintering': { title: 'Unsplintering', content: unsplinteringPage },
   'combat': { title: 'Combat', content: combatPage }
 }
 

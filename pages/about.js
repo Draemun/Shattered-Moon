@@ -26,6 +26,9 @@ const roleplayPage = `
       <a href="#terrains" onclick="setActive('terrains')" class="category-card">
         <h2>Terrains</h2>
       </a>
+      <a href="#unsplintering" onclick="setActive('unsplintering')" class="category-card">
+        <h2>Unsplintering</h2>
+      </a>
       <a href="#combat" onclick="setActive('combat')" class="category-card">
         <h2>Combat</h2>
       </a>
