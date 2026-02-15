@@ -52,10 +52,9 @@ const splintersPage = `
       </ul>
 
       <table class="combat-table">
-        <tr><th>Entity Name</th><th>Type</th><th>Description</th></tr>
+        <tr><th>Entity (Type)</th><th>Description</th></tr>
         <tr>
-          <td>The Ashes</td>
-          <td>Husks</td>
+          <td>The Ashes (Husk)</td>
           <td>
             <p>A Husk is what remains when a soul completely loses coherence during the splintering process. Nothing of the original consciousness survives: no memories, no will, no sense of self. They are empty vessels animated by corrupted energy.</p>
             <p>The Ashes is a standard result of falling to the Call of the Void. Their consciousness scattered completely, leaving only an empty, hostile shell. The soul broke down so thoroughly that nothing of the original being remains.</p>
@@ -67,8 +66,7 @@ const splintersPage = `
           </td>
         </tr>
         <tr>
-          <td>Nothing_is_Real (NIR)</td>
-          <td>Echo</td>
+          <td>Nothing_is_Real / NIR (Echo)</td>
           <td>
             <p>An Echo is a pokemon who splintered but managed to hold onto fragments of their original consciousness. They exist in a liminal state, corrupted but not entirely lost. Unlike Ashes, NIRs retain pieces of who they were. They remember things, distorted and incomplete, but real. They can think, choose, and even communicate.</p>
             <p>NIRs exhibit highly variable behavior:</p>
@@ -95,10 +93,9 @@ const splintersPage = `
       </ul>
 
       <table class="combat-table">
-        <tr><th>Entity Name</th><th>Type</th><th>Description</th></tr>
+        <tr><th>Entity (Type)</th><th>Description</th></tr>
         <tr>
-          <td>The Silhouette</td>
-          <td>Echo</td>
+          <td>The Silhouette (Echo)</td>
           <td>
             <p>The Silhouette is the result of legendary corruption forcing consciousness through a traumatic crystallization process. The victim's soul is trapped in a warped crystalline prison of their own body. Despite the severe physical transformation, the core consciousness remains, twisted, trapped, and in perpetual agony, but aware. The victim knows what they've become. They recognize others. They understand their own horror.</p>
             <p>Physical Manifestation:</p>
@@ -112,23 +109,7 @@ const splintersPage = `
           </td>
         </tr>
         <tr>
-          <td>Hetzer (+ Weaver)*</td>
-          <td>Husk</td>
-          <td>
-            <p>The Weaver possesses all the consciousness that survived the split. It retains stolen memories, can make complex decisions, and exhibits sophisticated hunting behavior. This makes it one of the most dangerous corrupted entities: it thinks, plans, and deceives.</p>
-            <ul class="rules-list">
-              <li>It retains stolen memories from victims</li>
-              <li>Mimics others with disturbing accuracy</li>
-              <li>Actively hunts to turn victims into more splinters</li>
-              <li>Capable of infiltration and psychological manipulation</li>
-            </ul>
-            <p>If you hurt one, you hurt the other. Despite the Hetzer being a Husk with no consciousness, it shares a link with the Weaver. Damage to the empty half affects the conscious half, they are two bodies, but one soul.</p>
-            <p>Unique Trait: This pair cannot be copied by any other entity. Zoroark illusions or Dittos attempting to mimic them drop immediately. Weaver illusions hold until they attack, as the act of violence disrupts their mimicry.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>Weaver (+ Hetzer)*</td>
-          <td>Shapeshifter Echo</td>
+          <td>Hetzer (Husk) + Weaver (Shapeshifter Echo)*</td>
           <td>
             <p>The Weaver possesses all the consciousness that survived the split. It retains stolen memories, can make complex decisions, and exhibits sophisticated hunting behavior. This makes it one of the most dangerous corrupted entities: it thinks, plans, and deceives.</p>
             <ul class="rules-list">
@@ -138,12 +119,11 @@ const splintersPage = `
               <li>Capable of infiltration and psychological manipulation</li>
             </ul>
             <p>Symbiotic Rule: If you hurt one, you hurt the other. Despite the Hetzer being a Husk with no consciousness, it shares a link with the Weaver. Damage to the empty half affects the conscious half, they are two bodies, but one soul.</p>
-            <p>Unique Trait: This pair cannot be copied by any other entity. Zoroark illusions fall when they're hit, while a Weaver illusion holds until they attack.</p>
+            <p>Unique Trait: This pair cannot be copied by any other entity. Zoroark illusions or Dittos attempting to mimic them drop immediately. Weaver illusions hold until they attack, as the act of violence disrupts their mimicry.</p>
           </td>
         </tr>
         <tr>
-          <td>Faraway (Cresselia only)</td>
-          <td>Echo</td>
+          <td>Faraway (Echo - Cresselia only)</td>
           <td>
             <p>Faraways are the intangible remnants of corrupted Cresselias, trapped in the Endless Moment, but able to manifest on Miralen. They are consciousness without form, aware but without the ability to interact directly with physical reality. They remember their purpose as protectors of dreams. They choose to guide and assist those who got lost or are on the verge of corruption.</p>
             <ul class="rules-list">
@@ -156,8 +136,7 @@ const splintersPage = `
           </td>
         </tr>
         <tr>
-          <td>Thorn Weaver (Darkrai only)</td>
-          <td>Echo</td>
+          <td>Thorn Weaver (Echo - Darkrai only)</td>
           <td>
             <p>Thorn Weavers are specialized variants of Weaver entities created from corrupted Darkrai. They inherit and corrupt Darkrai's ability to manipulate dreams and nightmares. They retain full consciousness and possess sophisticated cognitive abilities. They understand psychology, plan complex attacks, and can manipulate the boundary between dreams and reality.</p>
             <p>The most dangerous trait of Thorn Weavers is their ability to breach the barrier between dreams and waking reality. They can manifest physically from within a victim's subconscious, making them virtually impossible to defend against.</p>

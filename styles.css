@@ -772,6 +772,18 @@ footer p {
     margin-bottom: 30px;
     letter-spacing: 0.2em;
     text-shadow: 0 0 20px var(--glow-purple);
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .lore-content-section {
+        padding: 20px;
+    }
+    
+    .lore-content-section h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.1em;
+    }
 }
 
 .lore-content-section p {
@@ -942,6 +954,25 @@ footer p {
     border: 1px solid var(--accent-purple);
     border-radius: 8px;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .combat-table {
+        font-size: 0.65rem;
+    }
+    
+    .combat-table th,
+    .combat-table td {
+        padding: 5px 3px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+    
+    .combat-table th {
+        font-size: 0.6rem;
+        line-height: 1.2;
+        white-space: normal;
+    }
 }
 
 .combat-table th {

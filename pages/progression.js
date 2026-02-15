@@ -114,8 +114,9 @@ const progressionPage = `
       </table>
 
       <h3>Endorsement/Report Milestone Rewards</h3>
+      <p class="small-text">Endorse = Endorsements | Omni = Omniseeds | Void = Void Tokens</p>
       <table class="combat-table">
-        <tr><th>Endorsements</th><th>Joy Seeds</th><th>Credits</th><th>Omniseeds</th><th>Void Tokens</th></tr>
+        <tr><th>Endorse</th><th>Joy Seeds</th><th>Credits</th><th>Omni</th><th>Void</th></tr>
         <tr><td>5</td><td>10×</td><td>200</td><td>—</td><td>—</td></tr>
         <tr><td>10</td><td>15×</td><td>400</td><td>—</td><td>—</td></tr>
         <tr><td>15</td><td>20×</td><td>600</td><td>—</td><td>—</td></tr>
