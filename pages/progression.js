@@ -45,7 +45,7 @@ const progressionPage = `
         <tr><th>For Non-Corrupted</th><th>For Soul Splinters</th></tr>
         <tr>
           <td>1x Nexus Core Fragment (Temporary immunity to corruption spread for 3 turns)<br>5x Sitrus Berries<br>5x Reviver Seeds<br>1x Standard Weapon (Choice of melee or ranged, lasts 10 turns)<br>1x Void Shard</td>
-          <td>1x Resonance Amplifier (15% damage vs Non-Corrupted)<br>5x Sitrus Berries<br>5x Reviver Seeds<br>1x Standard Weapon (Choice of melee or ranged, lasts 10 turns)<br>1x Void Shard</td>
+          <td>1x Resonance Amplifier (15% damage vs Non-Corrupted for 3 turns)<br>5x Sitrus Berries<br>5x Reviver Seeds<br>1x Standard Weapon (Choice of melee or ranged, lasts 10 turns)<br>1x Void Shard</td>
         </tr>
       </table>
 
