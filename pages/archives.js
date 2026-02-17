@@ -189,17 +189,27 @@ const echoIssue622Page = `
 
 const entityLogPage = `
   <div class="container">
-    <h1 style="text-align: center; margin-bottom: 40px;">ENTITY LOG</h1>
+    <h1 style="text-align: center; margin-bottom: 20px;">ENTITY LOG</h1>
+    <div class="entity-filter" style="text-align: center; margin-bottom: 30px;">
+      <button class="filter-btn active" onclick="filterEntities('all')">All</button>
+      <button class="filter-btn" onclick="filterEntities('passive')">Passive</button>
+      <button class="filter-btn" onclick="filterEntities('moderate')">Moderate</button>
+      <button class="filter-btn" onclick="filterEntities('extreme')">Extreme</button>
+    </div>
     <div class="category-grid">
-      <a href="#entity-faraway" onclick="setActive('entity-faraway')" class="category-card">
+      <a href="#entity-faraway" onclick="setActive('entity-faraway')" class="category-card" data-threat="passive">
         <h2>Faraway</h2>
         <p class="small-text">Cresselia (Remnant) | Threat: Passive</p>
       </a>
-      <a href="#entity-found" onclick="setActive('entity-found')" class="category-card">
+      <a href="#entity-found" onclick="setActive('entity-found')" class="category-card" data-threat="moderate">
         <h2>found</h2>
         <p class="small-text">Tornadus | Threat: Moderate</p>
       </a>
-      <a href="#entity-thorn-weaver" onclick="setActive('entity-thorn-weaver')" class="category-card">
+      <a href="#entity-alone" onclick="setActive('entity-alone')" class="category-card" data-threat="extreme">
+        <h2>The Alone</h2>
+        <p class="small-text">Entei (Corrupted) | Threat: Extreme</p>
+      </a>
+      <a href="#entity-thorn-weaver" onclick="setActive('entity-thorn-weaver')" class="category-card" data-threat="extreme">
         <h2>Thorn Weaver</h2>
         <p class="small-text">Darkrai (Corrupted) | Threat: Extreme</p>
       </a>

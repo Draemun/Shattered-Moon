@@ -11,6 +11,7 @@ const pages = {
   'entity-found': entityFoundPage,
   'entity-faraway': entityFarawayPage,
   'entity-thorn-weaver': entityThornWeaverPage,
+  'entity-alone': entityAlonePage,
   about: aboutPage,
   roleplay: roleplayPage,
   'rp-rules': rpRulesPage,
@@ -120,6 +121,7 @@ const pageIndex = {
   'entity-found': { title: 'Entity: found', content: entityFoundPage },
   'entity-faraway': { title: 'Entity: Faraway', content: entityFarawayPage },
   'entity-thorn-weaver': { title: 'Entity: Thorn Weaver', content: entityThornWeaverPage },
+  'entity-alone': { title: 'Entity: The Alone', content: entityAlonePage },
   'about': { title: 'About', content: aboutPage },
   'roleplay': { title: 'Roleplay', content: roleplayPage },
   'rp-rules': { title: 'RP Rules', content: rpRulesPage },
@@ -259,3 +261,13 @@ document.addEventListener('click', (e) => {
     document.getElementById('searchBox').classList.remove('active')
   }
 })
+
+function filterEntities(threat) {
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'))
+  event.target.classList.add('active')
+  
+  const cards = document.querySelectorAll('.category-card[data-threat]')
+  cards.forEach(card => {
+    card.style.display = threat === 'all' || card.dataset.threat === threat ? '' : 'none'
+  })
+}
