@@ -153,7 +153,7 @@ const splintersPage = `
       </table>
       
       <p class="small-text">*Hetzer + Weaver is one character</p>
-      <p>All corrupted entities can worsen or be stabilized/managed depending on intervention and choice. There's no cure YET.</p>
+      <p>All corrupted entities can worsen or be stabilized/managed depending on intervention and choice.</p>
     </section>
 
     <section class="lore-content-section">
