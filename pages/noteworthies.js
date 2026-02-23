@@ -18,7 +18,7 @@ const noteworthiesPage = `
         <tr><td>Defense Commander &amp; Vice Guildmaster</td><td>Rye</td></tr>
         <tr><td>Documentation Commander</td><td>Avira</td></tr>
         <tr><td>Reconnaissance Commanders</td><td>2 Positions Open (they work in tandem)</td></tr>
-        <tr><td>Builders Commander</td><td>1 Position Open</td></tr>
+        <tr><td>Builders Commander</td><td>Demo</td></tr>
         <tr><td>Providers Commander</td><td>Naiko</td></tr>
         <tr><td>Void Hunters Commander</td><td>Arkyn [Staff NPC]</td></tr>
       </table>
