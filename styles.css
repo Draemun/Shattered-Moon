@@ -1212,7 +1212,7 @@ footer p {
     margin: 0 auto;
     position: relative;
     overflow: auto;
-    touch-action: pan-x pan-y;
+    touch-action: manipulation;
 }
 
 .map-container::after {
