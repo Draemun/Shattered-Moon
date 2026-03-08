@@ -219,6 +219,10 @@ body {
     box-shadow: 0 0 10px var(--glow-purple);
 }
 
+.submenu .submenu > a.active::after {
+    content: '';
+}
+
 .submenu-items {
     padding-left: 20px;
 }
@@ -1201,4 +1205,211 @@ footer p {
     border-color: var(--accent-purple);
     color: white;
     box-shadow: 0 0 15px var(--glow-purple);
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+    touch-action: pan-x pan-y;
+}
+
+.map-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15) 0px,
+        transparent 1px,
+        transparent 2px,
+        rgba(255, 255, 255, 0.15) 3px
+    );
+    pointer-events: none;
+    border-radius: 12px;
+    opacity: 0.6;
+    z-index: 5;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--accent-purple);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+    display: block;
+    cursor: pointer;
+}
+
+@keyframes pulse-ring {
+    0% {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+    }
+    100% {
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+    }
+}
+
+.map-pin:hover::before {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 15px var(--glow-cyan);
+}
+
+.map-pin:hover::after {
+    border-color: var(--accent-cyan);
+}
+
+.map-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.map-modal-content {
+    background: rgba(18, 18, 26, 0.6);
+    border: 2px solid var(--accent-purple);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 0 40px var(--glow-purple);
+    backdrop-filter: blur(10px);
+}
+
+.map-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    color: var(--accent-red);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.map-modal-close:hover {
+    color: white;
+    text-shadow: 0 0 10px var(--accent-red);
+}
+
+.map-modal-content h2 {
+    color: var(--accent-purple);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.map-modal-content h3 {
+    color: var(--accent-cyan);
+    margin: 15px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.map-modal-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .map-modal-content {
+        max-width: 90vw;
+        max-height: 70vh;
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+    
+    .map-modal-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .map-modal-content h3 {
+        font-size: 1rem;
+    }
+    
+    .map-modal-content p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .map-link-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+.map-links {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map-link-btn {
+    display: block;
+    padding: 12px 20px;
+    background: var(--accent-purple);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: 600;
+    box-shadow: 0 4px 15px var(--glow-purple);
+}
+
+.map-link-btn:hover {
+    background: #7c3aed;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--glow-purple);
+}
+
+.submenu .submenu > a::before {
+    content: '>';
+    position: absolute;
+    right: 15px;
+    font-size: 0.9rem;
+    transition: transform 0.3s;
+    pointer-events: auto;
+    padding: 5px;
+}
+
+.submenu .submenu.open > a::before {
+    transform: rotate(90deg);
+}
+
+.submenu .submenu > a {
+    padding-right: 40px;
+}
+
+.submenu .submenu > a.active::after {
+    display: none;
+}
+
+.submenu .submenu > .submenu-items {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.submenu .submenu.open > .submenu-items {
+    max-height: 500px;
 }

@@ -1,6 +1,7 @@
 const pages = {
   home: homePage,
   lore: lorePage,
+  maps: mapsPage,
   archives: archivesPage,
   'echo-miralen': echoMiralenPage,
   'echo-issue-21': echoIssue21Page,
@@ -88,6 +89,8 @@ function router() {
   document.getElementById('app').innerHTML = content
   linkifyKeywords(document.getElementById('app'))
   updateIndicator(hash)
+  if (hash === 'maps') initMap()
+  window.scrollTo(0, 0)
 }
 
 function toggleMenu() {
@@ -111,6 +114,7 @@ window.addEventListener('load', router)
 const pageIndex = {
   'home': { title: 'Home', content: homePage },
   'lore': { title: 'Lore', content: lorePage },
+  'maps': { title: 'Maps', content: mapsPage },
   'archives': { title: 'Archives', content: archivesPage },
   'echo-miralen': { title: 'Echo of Miralen', content: echoMiralenPage },
   'echo-issue-21': { title: 'Issue #21 - Guild Factions', content: echoIssue21Page },
@@ -270,4 +274,107 @@ function filterEntities(threat) {
   cards.forEach(card => {
     card.style.display = threat === 'all' || card.dataset.threat === threat ? '' : 'none'
   })
+}
+
+function initMap() {
+  const mapImg = document.getElementById('mapImg')
+  if (!mapImg) return
+  
+  let scale = 1
+  let panning = false
+  let pointX = 0
+  let pointY = 0
+  let start = { x: 0, y: 0 }
+  
+  mapImg.parentElement.style.overflow = 'auto'
+  mapImg.style.transformOrigin = '0 0'
+  
+  mapImg.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+      e.preventDefault()
+    } else if (e.touches.length === 1) {
+      start = { x: e.touches[0].clientX - pointX, y: e.touches[0].clientY - pointY }
+      panning = true
+    }
+  })
+  
+  mapImg.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 1 && panning) {
+      e.preventDefault()
+      pointX = e.touches[0].clientX - start.x
+      pointY = e.touches[0].clientY - start.y
+      mapImg.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
+    }
+  })
+  
+  mapImg.addEventListener('touchend', () => {
+    panning = false
+  })
+  
+  mapImg.addEventListener('click', function(e) {
+    if (scale > 1) return
+    
+    const rect = this.getBoundingClientRect()
+    const x = ((e.clientX - rect.left) / rect.width * 100).toFixed(2)
+    const y = ((e.clientY - rect.top) / rect.height * 100).toFixed(2)
+    
+    for (const [name, data] of Object.entries(mapLocations)) {
+      const dx = Math.abs(parseFloat(data.x) - parseFloat(x))
+      const dy = Math.abs(parseFloat(data.y) - parseFloat(y))
+      if (dx < 3 && dy < 3) {
+        openMapModal(name, data.lore, data.links)
+        return
+      }
+    }
+  })
+}
+
+function openMapModal(title, content, links) {
+  document.getElementById('modalTitle').textContent = title
+  let bodyContent = content
+  if (links && links.length > 0) {
+    bodyContent += '<div class="map-links">'
+    links.forEach(link => {
+      bodyContent += `<a href="#${link.page}" class="map-link-btn" onclick="closeMapModal(); setActive('${link.page}')">${link.title}</a>`
+    })
+    bodyContent += '</div>'
+  }
+  document.getElementById('modalBody').innerHTML = bodyContent
+  const modal = document.getElementById('mapModal')
+  modal.style.display = 'flex'
+  modal.onclick = (e) => {
+    if (e.target === modal) closeMapModal()
+  }
+}
+
+function closeMapModal() {
+  document.getElementById('mapModal').style.display = 'none'
+}
+
+
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a[data-page="roleplay"], a[data-page="character-creation"]')
+  if (link && link.parentElement.classList.contains('submenu')) {
+    const submenu = link.parentElement
+    const isOpen = submenu.classList.contains('open')
+    if (!isOpen) {
+      e.preventDefault()
+      submenu.classList.add('open')
+    }
+  }
+})
+
+function toggleSubmenu(e, page) {
+  const clickX = e.clientX
+  const link = e.target
+  const rect = link.getBoundingClientRect()
+  const rightEdge = rect.right - 40
+  
+  if (clickX >= rightEdge) {
+    e.preventDefault()
+    const submenu = link.closest('.submenu')
+    submenu.classList.toggle('open')
+  } else {
+    setActive(page)
+  }
 }

@@ -19,6 +19,7 @@
         <nav class="sidebar" id="sidebar">
             <a href="#home" onclick="setActive('home')" data-page="home">Home</a>
             <a href="#lore" onclick="setActive('lore')" data-page="lore">Lore</a>
+            <a href="#maps" onclick="setActive('maps')" data-page="maps">Maps</a>
             <div class="submenu">
                 <a href="#archives" onclick="setActive('archives')" data-page="archives">Archives</a>
                 <div class="submenu-items">
@@ -29,8 +30,30 @@
             <div class="submenu">
                 <a href="#about" onclick="setActive('about')" data-page="about">About</a>
                 <div class="submenu-items">
-                    <a href="#roleplay" onclick="setActive('roleplay')" data-page="roleplay">Roleplay</a>
-                    <a href="#character-creation" onclick="setActive('character-creation')" data-page="character-creation">Character Creation</a>
+                    <div class="submenu">
+                        <a href="#roleplay" onclick="event.stopPropagation(); toggleSubmenu(event, 'roleplay')" data-page="roleplay">Roleplay</a>
+                        <div class="submenu-items">
+                            <a href="#rp-rules" onclick="setActive('rp-rules')" data-page="rp-rules">Roleplay Rules</a>
+                            <a href="#evolution-forms" onclick="setActive('evolution-forms')" data-page="evolution-forms">Evolution & Forms</a>
+                            <a href="#gimmicks" onclick="setActive('gimmicks')" data-page="gimmicks">Gimmicks</a>
+                            <a href="#terrains" onclick="setActive('terrains')" data-page="terrains">Terrains</a>
+                            <a href="#unsplintering" onclick="setActive('unsplintering')" data-page="unsplintering">Unsplintering</a>
+                            <a href="#combat" onclick="setActive('combat')" data-page="combat">Combat</a>
+                        </div>
+                    </div>
+                    <div class="submenu">
+                        <a href="#character-creation" onclick="event.stopPropagation(); toggleSubmenu(event, 'character-creation')" data-page="character-creation">Character Creation</a>
+                        <div class="submenu-items">
+                            <a href="#character-rules" onclick="setActive('character-rules')" data-page="character-rules">Character Rules</a>
+                            <a href="#progression" onclick="setActive('progression')" data-page="progression">Progression & Rewards</a>
+                            <a href="#factions" onclick="setActive('factions')" data-page="factions">Factions</a>
+                            <a href="#parliament" onclick="setActive('parliament')" data-page="parliament">Parliament</a>
+                            <a href="#splinters" onclick="setActive('splinters')" data-page="splinters">Soul Splinters</a>
+                            <a href="#team-creation" onclick="setActive('team-creation')" data-page="team-creation">Team Creation</a>
+                            <a href="#noteworthies" onclick="setActive('noteworthies')" data-page="noteworthies">Noteworthies</a>
+                            <a href="#legendaries" onclick="setActive('legendaries')" data-page="legendaries">Legendary Entities</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -48,22 +71,24 @@
 
     <script src="pages/home.js"></script>
     <script src="pages/lore.js"></script>
-    <script src="pages/archives.js"></script>
-    <script src="pages/entity-alone.js"></script>
-    <script src="pages/about.js"></script>
-    <script src="pages/evolutions.js"></script>
-    <script src="pages/gimmicks.js"></script>
-    <script src="pages/terrains.js"></script>
-    <script src="pages/character-rules.js"></script>
-    <script src="pages/progression.js"></script>
-    <script src="pages/factions.js"></script>
-    <script src="pages/parliament.js"></script>
-    <script src="pages/splinters.js"></script>
-    <script src="pages/team-creation.js"></script>
-    <script src="pages/noteworthies.js"></script>
-    <script src="pages/legendaries.js"></script>
-    <script src="pages/unsplintering.js"></script>
-    <script src="pages/combat.js"></script>
+    <script src="maps/src/miralen.js"></script>
+    <script src="pages/archives/archives.js"></script>
+    <script src="pages/archives/echo-miralen.js"></script>
+    <script src="pages/archives/entity-log.js"></script>
+    <script src="pages/about/about.js"></script>
+    <script src="pages/about/roleplay/evolutions.js"></script>
+    <script src="pages/about/roleplay/gimmicks.js"></script>
+    <script src="pages/about/roleplay/terrains.js"></script>
+    <script src="pages/about/character-creation/character-rules.js"></script>
+    <script src="pages/about/character-creation/progression.js"></script>
+    <script src="pages/about/character-creation/factions.js"></script>
+    <script src="pages/about/character-creation/parliament.js"></script>
+    <script src="pages/about/character-creation/splinters.js"></script>
+    <script src="pages/about/character-creation/team-creation.js"></script>
+    <script src="pages/about/character-creation/noteworthies.js"></script>
+    <script src="pages/about/character-creation/legendaries.js"></script>
+    <script src="pages/about/roleplay/unsplintering.js"></script>
+    <script src="pages/about/roleplay/combat.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
