@@ -331,8 +331,6 @@ function initMap() {
   })
   
   mapImg.addEventListener('click', function(e) {
-    if (scale > 1) return
-    
     const rect = this.getBoundingClientRect()
     const x = ((e.clientX - rect.left) / rect.width * 100).toFixed(2)
     const y = ((e.clientY - rect.top) / rect.height * 100).toFixed(2)
