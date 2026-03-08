@@ -285,6 +285,7 @@ function initMap() {
   let pointX = 0
   let pointY = 0
   let start = { x: 0, y: 0 }
+  let initialDistance = 0
   
   mapImg.parentElement.style.overflow = 'auto'
   mapImg.style.transformOrigin = '0 0'
@@ -292,6 +293,9 @@ function initMap() {
   mapImg.addEventListener('touchstart', (e) => {
     if (e.touches.length === 2) {
       e.preventDefault()
+      const dx = e.touches[0].clientX - e.touches[1].clientX
+      const dy = e.touches[0].clientY - e.touches[1].clientY
+      initialDistance = Math.sqrt(dx * dx + dy * dy)
     } else if (e.touches.length === 1) {
       start = { x: e.touches[0].clientX - pointX, y: e.touches[0].clientY - pointY }
       panning = true
@@ -299,7 +303,17 @@ function initMap() {
   })
   
   mapImg.addEventListener('touchmove', (e) => {
-    if (e.touches.length === 1 && panning) {
+    if (e.touches.length === 2) {
+      e.preventDefault()
+      const dx = e.touches[0].clientX - e.touches[1].clientX
+      const dy = e.touches[0].clientY - e.touches[1].clientY
+      const distance = Math.sqrt(dx * dx + dy * dy)
+      const newScale = (distance / initialDistance) * scale
+      if (newScale >= 1 && newScale <= 3) {
+        scale = newScale
+        mapImg.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
+      }
+    } else if (e.touches.length === 1 && panning) {
       e.preventDefault()
       pointX = e.touches[0].clientX - start.x
       pointY = e.touches[0].clientY - start.y
@@ -307,8 +321,13 @@ function initMap() {
     }
   })
   
-  mapImg.addEventListener('touchend', () => {
-    panning = false
+  mapImg.addEventListener('touchend', (e) => {
+    if (e.touches.length < 2) {
+      initialDistance = 0
+    }
+    if (e.touches.length === 0) {
+      panning = false
+    }
   })
   
   mapImg.addEventListener('click', function(e) {
