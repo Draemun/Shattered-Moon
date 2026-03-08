@@ -286,6 +286,7 @@ function initMap() {
   let pointY = 0
   let start = { x: 0, y: 0 }
   let initialDistance = 0
+  let pinchCenter = { x: 0, y: 0 }
   
   mapImg.parentElement.style.overflow = 'auto'
   mapImg.style.transformOrigin = '0 0'
@@ -296,6 +297,9 @@ function initMap() {
       const dx = e.touches[0].clientX - e.touches[1].clientX
       const dy = e.touches[0].clientY - e.touches[1].clientY
       initialDistance = Math.sqrt(dx * dx + dy * dy)
+      const rect = mapImg.getBoundingClientRect()
+      pinchCenter.x = ((e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left - pointX) / scale
+      pinchCenter.y = ((e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top - pointY) / scale
     } else if (e.touches.length === 1) {
       start = { x: e.touches[0].clientX - pointX, y: e.touches[0].clientY - pointY }
       panning = true
@@ -310,6 +314,11 @@ function initMap() {
       const distance = Math.sqrt(dx * dx + dy * dy)
       const newScale = (distance / initialDistance) * scale
       if (newScale >= 1 && newScale <= 3) {
+        const rect = mapImg.getBoundingClientRect()
+        const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2
+        const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2
+        pointX = centerX - rect.left - pinchCenter.x * newScale
+        pointY = centerY - rect.top - pinchCenter.y * newScale
         scale = newScale
         mapImg.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`
       }
