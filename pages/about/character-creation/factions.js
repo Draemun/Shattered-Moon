@@ -175,6 +175,43 @@ const factionsPage = `
       <p>The Chroniclers try to document their stories. The Seekers try to convince them there's hope. Neither has high success rates.</p>
     </section>
     
+    <section class="lore-content-section">
+      <h1>THE VOIDSWORN CULT</h1>
+      <p>The Voidsworn worship The Original One (Arceus).</p>
+      <p>Years before the splintering, the group was known as the <strong>Rings of Light</strong>. They worshiped Arceus as their God and adhered to strict rules. For many generations, an artifact simply referred to as <em>the relic</em> was passed down. It was proclaimed to be a gift from Arceus, but records are unclear as to where it actually came from. After the world broke apart, the cult had a disagreement on their beliefs. Some believed Arceus abandoned them and left altogether. Others continued to follow, although beliefs as to why Arceus did this were varied. The cult was divided into different factions. The group that prevailed above the others was the <strong>Mayworth Sect</strong>: now called The Voidsworn.</p>
+      <p>The group counts as Indipendent.</p>
+      
+      <h3>Beliefs</h3>
+      <p>The Voidsworn believe that the current state Miralen is in is a trial put forth by Arceus. They believe if they persist long enough for all mons to be splintered, Arceus will then bestow his blessing. They see splintering as a blessing from Arceus, as he is able to 'do his work' through the victim. Despite this belief, the higher ups in the cult refuse to become splintered themselves. They proclaim they are still needed to spread the word of Arceus.</p>
+      <p>The Voidsworn see the relic, a fragment of the red chain, as a gift from Arceus himself. They use it in many different rituals to 'appease' Arceus.</p>
+      <p>The Relic is brought out for significant rituals: initiations, blessings of splintered members, and community festivals tied to the faith calendar. These are the occasions when miracles tend to happen and mons convert at these events regularly. Those who are splintered during or after joining the cult are treated as honored. Their care is taken seriously by the community. It is also, quietly, one of their most effective recruitment tools.</p>
+
+      <h3>Daily Life</h3>
+      <p>The Voidsworn run tight communities. They have rules, more than most, and adherence is expected and tracked. Minor violations earn correction while repeated violations earn ostracism from community resources and social standing. Serious violations, or enough accumulated smaller ones, earn expulsion.</p>
+      <p>Daily life involves communal labor, scheduled prayer, and regular ritual gatherings. <strong>Sunny Day</strong> is used frequently in worship, framed as an act of devotion that calls Arceus's light down into the world.</p>
+
+      <h3>Hierarchy</h3>
+      <p>The Voidsworn are currently led by <strong>Wilfred Mayworth</strong>. He is closely followed by his second in command, <strong>Pecharunt</strong>. Both are aware of the true nature of the Relic and of Koraidon's captivity, but neither discusses this openly, even with trusted subordinates.</p>
+      <p>Underneath these two are the <strong>Void Blessed</strong>: mons that travel around Miralen, spreading the religion further. They report directly to Wilfred and Pecharunt. The Void Blessed are almost universally true believers. Knowledge of the Relic's true nature is not shared with them unless they are brought fully into the inner circle, which rarely happens.</p>
+      <p>Beneath those are <strong>splintered individuals</strong>, although their actual participation in the cult varies. Some are functional and devout, others are barely present.</p>
+      <p>At the bottom are all other members. Those who believe are encouraged to either become one of the Void Blessed and help spread the word, or to get splintered themselves.</p>
+      <p>The congregation is a mix: true believers, desperate survivors who needed community, opportunists, and a quieter few who have doubts but know better than to voice them.</p>
+
+      <details class="spoiler">
+        <summary>⚠ Info Not Available to the General Public - Click to Reveal</summary>
+        <div class="spoiler-content">
+          <h3>The Red Chain</h3>
+          <p>The Relic put on display and used in rituals is a fake recreation of the real one. It is a fire gem, cut to resemble a fragment of the Red Chain. Any so-called miracles performed with it are elaborate ploys put together by the inner circle.</p>
+
+          <h3>Koraidon</h3>
+          <p>The real chain fragments are being used to subdue Koraidon. The Red Chain is old and powerful enough to restrain beings that should not be restrainable. It holds Koraidon in place, and beyond that, it numbs and fragments their awareness.</p>
+          <p>As long as strong light is present, Koraidon generates energy passively. The cult maintains a rotation of reflected and replicated Sunny Day in the chamber where Koraidon is kept. This is also part of why Sunny Day is so important in Voidsworn worship: framed as calling down the light of Arceus, it serves a second purpose the congregation knows nothing about. The energy Koraidon produces is siphoned and used to sustain Voidsworn infrastructure across Miralen. The congregation believes their communities are held together by faith and labor. They are, in part, being kept alive by a captive legendary.</p>
+          <p>When Koraidon was captured is not clearly documented. The records that might answer this are either lost or have been deliberately obscured. What is known is that the Mayworth Sect's rise after the Splintering coincided closely with their acquisition of the real Red Chain, and that this consolidation of power happened very quickly once they had it.</p>
+          <p>Whether Koraidon was taken before the Splintering as part of the Rings of Light's history, or captured in the chaos immediately after, remains an open question.</p>
+        </div>
+      </details>
+    </section>
+    
     <p style="text-align: center; margin-top: 30px;"><a href="https://docs.google.com/document/d/17zF2vHcF3EHldp8ANJUfR5i0Rr0FLfetq4IWwEHErkQ/edit?tab=t.6b31l96e32br" target="_blank" class="discord-link">View Original</a></p>
   </div>
 `
