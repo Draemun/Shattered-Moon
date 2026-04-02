@@ -82,9 +82,9 @@ const legendariesPage = `
         <tr><td>Pecharunt</td><td>/</td><td>/</td></tr>
         <tr><td>Miraidon</td><td>/</td><td>/</td></tr>
         <tr><td>Terapagos</td><td>/</td><td>/</td></tr>
-        <tr><td>Wo-Chien</td><td>/</td><td>/</td></tr>
-        <tr><td>Chi-Yu</td><td>/</td><td>/</td></tr>
-        <tr><td>Ting-Lu</td><td>/</td><td>/</td></tr>
+        <tr><td>Wo-Chien</td><td>/</td><td>Ask for lore.</td></tr>
+        <tr><td>Chi-Yu</td><td>/</td><td>Ask for lore.</td></tr>
+        <tr><td>Ting-Lu</td><td>/</td><td>Ask for lore.</td></tr>
         <tr><td>Walking Wake</td><td>/</td><td>/</td></tr>
         <tr><td>Raging Bolt</td><td>/</td><td>/</td></tr>
         <tr><td>Gouging Fire</td><td>/</td><td>/</td></tr>
