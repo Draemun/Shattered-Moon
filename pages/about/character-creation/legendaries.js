@@ -48,6 +48,7 @@ const legendariesPage = `
         <tr><td>White Kyurem [Seven]</td><td>/</td><td>Intact / Neutral</td></tr>
         <tr><td>Dusk Mane Necrozma [Aura]</td><td>/</td><td>Intact / Protective</td></tr>
         <tr><td>Xerneas [Nethercard]</td><td>The Caretaker</td><td>Intact / Protective</td></tr>
+         <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
       </table>
     </section>
 
@@ -82,7 +83,6 @@ const legendariesPage = `
         <tr><td>Pecharunt</td><td>/</td><td>/</td></tr>
         <tr><td>Miraidon</td><td>/</td><td>/</td></tr>
         <tr><td>Terapagos</td><td>/</td><td>/</td></tr>
-        <tr><td>Wo-Chien</td><td>/</td><td>Ask for lore.</td></tr>
         <tr><td>Chi-Yu</td><td>/</td><td>Ask for lore.</td></tr>
         <tr><td>Ting-Lu</td><td>/</td><td>Ask for lore.</td></tr>
         <tr><td>Walking Wake</td><td>/</td><td>/</td></tr>
