@@ -29,7 +29,7 @@ const legendariesPage = `
         <tr><td>Yveltal [Staff NPC]</td><td>End Enforcer</td><td>Splintered / Hostile</td></tr>
         <tr><td>Hoopa Unbound [Staff NPC]</td><td>The Shattered</td><td>Splintered / Hostile</td></tr>
         <tr><td>Dawn Wing Necrozma [Staff NPC]</td><td>The Fallen</td><td>Splintered / Hostile</td></tr>
-        <tr><td>Chien-Pao [Staff NPC]</td><td>The Last Edge</td><td>Splintered / Unknown</td></tr>
+        <tr><td>Chien-Pao [Staff NPC]</td><td>The Last Edge</td><td>Unknown</td></tr>
         <tr><td>Mew [Staff NPC]</td><td>The Helper</td><td>Intact / Protective</td></tr>
         <tr><td>Mewtwo [Staff NPC]</td><td>The Instructor</td><td>Intact / Neutral</td></tr>
         <tr><td>Celebi [Staff NPC]</td><td>The Legend</td><td>Unknown</td></tr>
