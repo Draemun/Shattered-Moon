@@ -48,6 +48,7 @@ const legendariesPage = `
         <tr><td>White Kyurem [Seven]</td><td>/</td><td>Intact / Neutral</td></tr>
         <tr><td>Dusk Mane Necrozma [Aura]</td><td>/</td><td>Intact / Protective</td></tr>
         <tr><td>Xerneas [Nethercard]</td><td>The Caretaker</td><td>Intact / Protective</td></tr>
+        <tr><td>Lugia [Spykid]</td><td>The Ruler</td><td>Intact / Protective</td></tr>
          <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
       </table>
     </section>
@@ -62,7 +63,6 @@ const legendariesPage = `
         <tr><td>G.Articuno</td><td>/</td><td>/</td></tr>
         <tr><td>G.Zapdos</td><td>/</td><td>/</td></tr>
         <tr><td>G.Moltres</td><td>/</td><td>/</td></tr>
-        <tr><td>Lugia</td><td>The Ruler</td><td>/</td></tr>
         <tr><td>Ho-Oh</td><td>The Maker</td><td>/</td></tr>
         <tr><td>Regigigas</td><td>/</td><td>/</td></tr>
         <tr><td>Kyogre</td><td>/</td><td>/</td></tr>
