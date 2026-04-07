@@ -32,6 +32,7 @@ const legendariesPage = `
         <tr><td>Chien-Pao [Staff NPC]</td><td>The Last Edge</td><td>Unknown</td></tr>
         <tr><td>Mew [Staff NPC]</td><td>The Helper</td><td>Intact / Protective</td></tr>
         <tr><td>Mewtwo [Staff NPC]</td><td>The Instructor</td><td>Intact / Neutral</td></tr>
+        <tr><td>Koraidon [Staff NPC]</td><td>The Burned</td><td>Unknown</td></tr>
         <tr><td>Celebi [Staff NPC]</td><td>The Legend</td><td>Unknown</td></tr>
       </table>
     </section>
@@ -41,7 +42,6 @@ const legendariesPage = `
       <table class="combat-table">
         <tr><th>Legendary</th><th>Also Known As</th><th>Status</th></tr>
         <tr><td>Raikou [Ren]</td><td>The Messenger</td><td>Intact / Protective</td></tr>
-        <tr><td>Koraidon [Ren]</td><td>The Burned</td><td>Unknown</td></tr>
         <tr><td>Zacian [Apollo]</td><td>The Faded</td><td>Splintered / Neutral</td></tr>
         <tr><td>Tornadus [Evie]</td><td>found</td><td>Splintered / Neutral</td></tr>
         <tr><td>Enamorus [Peach]</td><td>/</td><td>Splintered / Hostile</td></tr>
