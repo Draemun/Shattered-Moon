@@ -65,23 +65,24 @@ const rpRulesPage = `
       <h1>PROHIBITED CONTENT</h1>
       <p>The following topics are strictly forbidden in character profiles, roleplay, and server lore:</p>
       
-      <div class="spoiler-box" onclick="this.classList.toggle('revealed')">
-        <div class="spoiler-overlay">Click to reveal sensitive content</div>
-        <ul class="rules-list spoiler-content">
-          <li>Sexual assault, rape, molestation, or sexual abuse of any kind</li>
-          <li>Pedophilia or sexualization of minors</li>
-          <li>Mimicry or parody of indigenous cultures or practices (Inspiration is acceptable; direct mimicry is not)</li>
-          <li>Real-world religious imagery or practices (General inspiration is fine; explicit references are not)</li>
-          <li>Real-world political statements or symbolism</li>
-        </ul>
-      </div>
+      <details class="spoiler">
+        <summary>⚠ Click to reveal sensitive content</summary>
+        <div class="spoiler-content">
+          <ul class="rules-list">
+            <li>Sexual assault, rape, molestation, or sexual abuse of any kind</li>
+            <li>Pedophilia or sexualization of minors</li>
+            <li>Mimicry or parody of indigenous cultures or practices (Inspiration is acceptable; direct mimicry is not)</li>
+            <li>Real-world religious imagery or practices (General inspiration is fine; explicit references are not)</li>
+            <li>Real-world political statements or symbolism</li>
+          </ul>
+        </div>
+      </details>
 
       <ul class="rules-list">
         <li>Canon character connections, crossovers, parodies, or alternate universe versions</li>
         <li>Overly perfect characters</li>
         <li>Overpowered or god-modding characters</li>
         <li>Legendaries appearing in backstories without staff permission</li>
-        <li>Pokémon fusions</li>
       </ul>
     </section>
 
