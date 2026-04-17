@@ -70,7 +70,7 @@ const noteworthiesPage = `
       <h1>PARLIAMENT & NOTEWORTHIES</h1>
       <table class="combat-table">
         <tr><th>Role</th><th>Availability</th></tr>
-        <tr><td>Parliament Representative</td><td>5 Positions Open</td></tr>
+        <tr><td>Parliament Representative</td><td>Twirl - Mystic Forest<br>4 Positions Open</td></tr>
         <tr><td>Noteworthy Character</td><td>Several Positions Open</td></tr>
       </table>
       <p>Representatives start at base BST and immediately get Egg + Amulet.</p>
