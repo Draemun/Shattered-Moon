@@ -81,6 +81,8 @@ const legendariesPage = `
         <tr><td>Calyrex</td><td>/</td><td>/</td></tr>
         <tr><td>Spectrier</td><td>/</td><td>/</td></tr>
         <tr><td>Galastrier</td><td>/</td><td>/</td></tr>
+         <tr><td>Regidrago</td><td>/</td><td>/</td></tr>
+          <tr><td>Regieleki</td><td>/</td><td>/</td></tr>
         <tr><td>Miraidon</td><td>/</td><td>/</td></tr>
         <tr><td>Terapagos</td><td>/</td><td>/</td></tr>
         <tr><td>Chi-Yu</td><td>/</td><td>Ask for lore.</td></tr>
