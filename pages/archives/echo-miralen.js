@@ -22,6 +22,11 @@ const echoMiralenPage = `
         <h2>Where We Came From</h2>
         <p class="small-text">What the oldest marks in Miralen actually tell us</p>
       </a>
+      <a href="#echo-issue-35" onclick="setActive('echo-issue-35')" class="category-card magazine-card">
+        <div class="magazine-header">ISSUE #35</div>
+        <h2>The Long Becoming</h2>
+        <p class="small-text">So when does the Harmony Age actually start?</p>
+      </a>
       <a href="#echo-issue-622" onclick="setActive('echo-issue-622')" class="category-card magazine-card">
         <div class="magazine-header">ARCHIVES #622</div>
         <h2>Glacien Hollow Disaster</h2>
@@ -274,6 +279,62 @@ const echoIssue34Page = `
     </section>
     
     <p style="text-align: center; margin-top: 30px;"><a href="https://discord.com/channels/1426570529200017549/1498991222067302450" target="_blank" class="discord-link">View Original</a></p>
+  </div>
+`
+
+const echoIssue35Page = `
+  <div class="container">
+    <section class="lore-content-section">
+      <div class="paper">
+        <div class="masthead">
+          <span class="masthead-title">ECHO OF MIRALEN</span>
+          <span class="masthead-meta">Issue #35</span>
+        </div>
+        <div class="issue-bar">
+          <span>The Long Becoming</span>
+          <span>Photos: NO.8 &nbsp;|&nbsp; Styling: Venair Lux &nbsp;|&nbsp; Writing: Alai Rae</span>
+        </div>
+
+        <div class="article">
+          <div class="article-headline">The Long Becoming</div>
+          <div class="article-byline">By Alai Rae</div>
+          <div class="article-body">
+            <p>If you want to find where civilization started, look for the graves. The moment a community started returning to the same place to bury its dead, when it started adding to the same carvings its grandparents had made&hellip; that is when something you could call culture began to exist.</p>
+          </div>
+        </div>
+
+        <hr class="section-rule">
+        <div class="section-label">THE HARMONY AGE</div>
+
+        <div class="article">
+          <div class="article-headline">So When Does the Harmony Age Actually Start?</div>
+          <div class="article-body two-col">
+            <p>That's the frustrating part, dear reader, it doesn't start. The Harmony Age is the name the Chroniclers give to the long stretch between the wandering packs of the Feral Age and the city-states of the New Age.</p>
+            <p>Several thousand years, by best estimate. In that time, Miralen went from scattered nomadic groups to something with trade routes, written law, and merchant guilds.</p>
+            <p>The Chroniclers who have spent careers trying to map it have largely given up looking for a single cause, which is the honest conclusion and also the frustrating one.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="article-headline">The Most Interesting Change? The Eating Laws.</div>
+          <div class="article-body">
+            <p>Genuinely? The eating laws. At some point in the mid-Harmony period, village codes began to prohibit consuming other Pok&eacute;mon. And the early phrasing wasn't moral.</p>
+            <div class="pull-quote">You do not eat your neighbor. You do not eat the Pok&eacute;mon of a village with whom you trade. You do not eat anyone with whom you share a language.</div>
+            <p>The boundary expanded as trade networks expanded. The category of &ldquo;neighbor&rdquo; grew until the prohibition became general enough to function as a foundational norm. Communities in the north and east resisted for generations. The transition took centuries and was not always peaceful.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="article-headline">Civilization Is Mostly Logistics</div>
+          <div class="article-body">
+            <p>Civilization, turns out, is mostly logistics and less inspiring than the stories we tell about it. The ancestor organizations of what is now the Guild trace back to this same period: it was made of loose associations of traders sharing route knowledge and mutual protection.</p>
+            <p>The lineage is broken in several places, but the thread is there if you look for it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p style="text-align: center; margin-top: 30px;"><a href="https://discord.com/channels/1426570529200017549/1500855811369467984" target="_blank" class="discord-link">View Original</a></p>
   </div>
 `
 
