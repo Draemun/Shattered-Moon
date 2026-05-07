@@ -20,7 +20,7 @@ const noteworthiesPage = `
         <tr><td>Reconnaissance Commanders</td><td>Solana<br>1 Position Open (They work in tandem.)</td></tr>
         <tr><td>Builders Commander</td><td>Demo</td></tr>
         <tr><td>Providers Commander</td><td>Naiko</td></tr>
-        <tr><td>Void Hunters Commander</td><td>Arkyn [Staff NPC]</td></tr>
+        <tr><td>Void Hunters Commander</td><td>Arkyn</td></tr>
       </table>
     </section>
 
@@ -70,7 +70,7 @@ const noteworthiesPage = `
       <h1>PARLIAMENT & NOTEWORTHIES</h1>
       <table class="combat-table">
         <tr><th>Role</th><th>Availability</th></tr>
-        <tr><td>Parliament Representative</td><td>Twirl - Mystic Forest<br>4 Positions Open</td></tr>
+        <tr><td>Parliament Representative</td><td>Twirl - Mystic Forest<br>Plattima - Aetheria<br>3 Positions Open</td></tr>
         <tr><td>Noteworthy Character</td><td>Several Positions Open</td></tr>
       </table>
       <p>Representatives start at base BST and immediately get Egg + Amulet.</p>
