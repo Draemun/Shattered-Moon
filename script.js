@@ -276,7 +276,7 @@ function filterEntities(threat) {
   document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'))
   event.target.classList.add('active')
   
-  const cards = document.querySelectorAll('.category-card[data-threat]')
+  const cards = document.querySelectorAll('.terminal-card[data-threat], .category-card[data-threat]')
   cards.forEach(card => {
     card.style.display = threat === 'all' || card.dataset.threat === threat ? '' : 'none'
   })
