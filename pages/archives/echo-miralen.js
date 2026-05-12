@@ -27,6 +27,11 @@ const echoMiralenPage = `
         <h2>The Long Becoming</h2>
         <p class="small-text">So when does the Harmony Age actually start?</p>
       </a>
+      <a href="#echo-issue-36" onclick="setActive('echo-issue-36')" class="category-card magazine-card">
+        <div class="magazine-header">ISSUE #36</div>
+        <h2>The Conflicts That Built the World We Lost</h2>
+        <p class="small-text">Every major conflict followed roughly the same shape</p>
+      </a>
       <a href="#echo-issue-622" onclick="setActive('echo-issue-622')" class="category-card magazine-card">
         <div class="magazine-header">ARCHIVES #622</div>
         <h2>Glacien Hollow Disaster</h2>
@@ -335,6 +340,59 @@ const echoIssue35Page = `
     </section>
 
     <p style="text-align: center; margin-top: 30px;"><a href="https://discord.com/channels/1426570529200017549/1500855811369467984" target="_blank" class="discord-link">View Original</a></p>
+  </div>
+`
+
+const echoIssue36Page = `
+  <div class="container">
+    <section class="lore-content-section">
+      <div class="paper">
+        <div class="masthead">
+          <span class="masthead-title">ECHO OF MIRALEN</span>
+          <span class="masthead-meta">Issue #36</span>
+        </div>
+        <div class="issue-bar">
+          <span>The Conflicts That Built the World We Lost</span>
+          <span>Photos: NO.10 &nbsp;|&nbsp; Styling: Venair Lux &nbsp;|&nbsp; Writing: Alai Rae</span>
+        </div>
+
+        <div class="article">
+          <div class="article-headline">The Conflicts That Built the World We Lost</div>
+          <div class="article-byline">By Alai Rae</div>
+          <div class="article-body two-col">
+            <p>Every major conflict in the New Age followed roughly the same shape: a legitimate grievance between two parties, a cluster of secondary parties who joined because they had their own calculations to make, escalation, then attrition, then a treaty that settled whatever was on the surface and left everything underneath untouched.</p>
+            <p>Then, forty years later, the underneath things surfaced and the whole structure assembled itself again with different names.</p>
+          </div>
+        </div>
+
+        <hr class="section-rule">
+        <div class="section-label">THE CONFLICTS</div>
+
+        <div class="article">
+          <div class="article-headline">Can You Give Me the Highlights?</div>
+          <div class="article-body">
+            <p>But of course, dear reader, though &ldquo;highlights&rdquo; feels like the wrong word for any of this.</p>
+            <p><strong>The Sulrath Conflict</strong>, 230 years before the Shattering, was about a river diversion project and water rights downstream. Six city-states were involved and it lasted eighteen months. The treaty answered the water question and nothing else.</p>
+            <p><strong>The Cadent Schism</strong>, roughly a century later, was officially about trade policy. It was actually about whether communities that had governed themselves for generations could coexist with communities that had grown large enough to see centralized coordination as obviously necessary. They tried to negotiate it three separate times &mdash; but of course, it didn't work any of the three times.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="article-headline">And the Last War?</div>
+          <div class="article-body">
+            <p>The Last War started fourteen years before the Shattering, over extraction rights in the northern territories. A supply convoy was seized under disputed legal authority and that was the occasion, for everything that had been building for years.</p>
+            <p>It ran for five years and only ended when the costs exceeded the potential gains for all major parties, when the trading relationships that had developed during the war itself made peacetime cooperation more profitable than continued fighting.</p>
+            <p>The treaty held, surprisingly. It was an economic peace, which is less romantic than other kinds&hellip; but at least it was convenient.</p>
+            <p>What it wasn't was resolved, though. The communities still rebuilding had no reparations in that treaty. The displaced populations had not been resettled. The factions within city-states that had supported the war versus those that had opposed it were sometimes more volatile than anything happening at the borders.</p>
+            <p>Those tensions didn't dissolve when the Shattering started.</p>
+            <p>They came to Last Haven with us and they are still here. I hear them in Parliament sessions, in the settlements when someone from the eastern territories and someone from the basin end up in the same room.</p>
+            <p>We didn't fix any of it. &hellip;We just found a larger problem to stand next to it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p style="text-align: center; margin-top: 30px;"><a href="https://discord.com/channels/1426570529200017549/1503696407083618415" target="_blank" class="discord-link">View Original</a></p>
   </div>
 `
 
