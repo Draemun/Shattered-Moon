@@ -53,7 +53,7 @@ const entityFoundPage = `
           <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-moderate">MODERATE</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span>Minimal</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Daily Anomaly Logs</span></div>
-          <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Public Record</span></div>
+          <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Restricted / Guild Access Required</span></div>
         </div>
 
         <div class="terminal-section-label">ANOMALOUS PROPERTIES</div>
