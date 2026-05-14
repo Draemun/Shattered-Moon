@@ -32,6 +32,11 @@ const echoMiralenPage = `
         <h2>The Conflicts That Built the World We Lost</h2>
         <p class="small-text">Every major conflict followed roughly the same shape</p>
       </a>
+      <a href="#echo-issue-37" onclick="setActive('echo-issue-37')" class="category-card magazine-card">
+        <div class="magazine-header">ISSUE #37</div>
+        <h2>What We Are Today</h2>
+        <p class="small-text">Five years. That is what we have.</p>
+      </a>
       <a href="#echo-issue-622" onclick="setActive('echo-issue-622')" class="category-card magazine-card">
         <div class="magazine-header">ARCHIVES #622</div>
         <h2>Glacien Hollow Disaster</h2>
@@ -393,6 +398,63 @@ const echoIssue36Page = `
     </section>
 
     <p style="text-align: center; margin-top: 30px;"><a href="https://discord.com/channels/1426570529200017549/1503696407083618415" target="_blank" class="discord-link">View Original</a></p>
+  </div>
+`
+
+const echoIssue37Page = `
+  <div class="container">
+    <section class="lore-content-section">
+      <div class="paper">
+        <div class="masthead">
+          <span class="masthead-title">ECHO OF MIRALEN</span>
+          <span class="masthead-meta">Issue #37</span>
+        </div>
+        <div class="issue-bar">
+          <span>What We Are Today</span>
+          <span>Photos: NO.11 &nbsp;|&nbsp; Styling: Venair Lux &nbsp;|&nbsp; Writing: Alai Rae</span>
+        </div>
+
+        <div class="article">
+          <div class="article-headline">What We Are Today</div>
+          <div class="article-byline">By Alai Rae</div>
+          <div class="article-body">
+            <p>The first signs were not recognized.</p>
+            <p>Reports came in from isolated locations, claiming geological anomalies, equipment failures, perceptual disturbances attributed to stress and overwork. The investigations found nothing useful, because the investigators were looking for explanations that fit the world as it was. ...The world had already stopped being that.</p>
+          </div>
+        </div>
+
+        <hr class="section-rule">
+        <div class="section-label">THE SHATTERING</div>
+
+        <div class="article">
+          <div class="article-headline">What Actually Happened During the Shattering?</div>
+          <div class="article-body two-col">
+            <p>Time went wrong first, then space. The infrastructure that the post-war peace had been built on, the supply lines, the communication networks, the trade relationships, all dissolved faster than anyone had planned for. No one had a plan for the Legendaries turning out to be real, dangerous, and present.</p>
+            <p>What survived was what was small enough to not need large-scale infrastructure, was distributed enough to not collapse when a center failed, and what had, through geography, resources and height.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="article-headline">So How Did Last Haven and the Parliament Come to Be?</div>
+          <div class="article-body">
+            <p>Necessity, mostly. The Parliament was assembled in emergency session because the alternative to some form of representative governance was either the collapse of inter-community cooperation or the dominance of whoever happened to be strongest in a given moment. Both alternatives had already been tried in the early chaos and neither had worked.</p>
+            <p>The Silvally chosen to lead was chosen because the crisis required someone whose authority no single constituency could claim as exclusively their own. The districts were drawn around who had survived and where. The Guild was rebuilt around what was still functional and why. People came to Last Haven carrying grievances from the Before and for a while, they did not set them down just because the world had ended.</p>
+            <p>None of it was designed to last. We expected it to last the week, then a month, then a year, and we kept extending it because nothing better was available and 'mons started to survive and thrive thanks to it.</p>
+          </div>
+        </div>
+
+        <hr class="section-rule">
+
+        <div class="article">
+          <div class="article-body">
+            <p>Five years. That is what we have. We built something worth protecting.</p>
+            <p>With this, dear reader, we have traced the whole lore of our beautiful world. Yes, we might have merely scratched the surface, but I feel like it's necessary not to forget who we were and what we are now.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p style="text-align: center; margin-top: 30px;"><a href="https://discord.com/channels/1426570529200017549/1504406354008477736" target="_blank" class="discord-link">View Original</a></p>
   </div>
 `
 
