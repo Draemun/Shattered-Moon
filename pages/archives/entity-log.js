@@ -12,25 +12,25 @@ const entityLogPage = `
       <a href="#entity-faraway" onclick="setActive('entity-faraway')" class="terminal-card" data-threat="passive">
         <div class="terminal-card-name">FARAWAY</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Cresselia (Remnant)</span></div>
-        <div class="terminal-card-row"><span>STATUS</span><span>Active / Uncontained</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>D (Moderate to No Threat)</span></div>
         <div class="terminal-threat passive">PASSIVE</div>
       </a>
       <a href="#entity-found" onclick="setActive('entity-found')" class="terminal-card" data-threat="moderate">
         <div class="terminal-card-name">found</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Tornadus</span></div>
-        <div class="terminal-card-row"><span>STATUS</span><span>Active / Uncontained</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>S+ (Moderate to High Threat)</span></div>
         <div class="terminal-threat moderate">MODERATE</div>
       </a>
       <a href="#entity-alone" onclick="setActive('entity-alone')" class="terminal-card" data-threat="extreme">
         <div class="terminal-card-name">THE ALONE</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Entei (Corrupted)</span></div>
-        <div class="terminal-card-row"><span>STATUS</span><span>Active / Uncontained</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>S+ (High Threat)</span></div>
         <div class="terminal-threat extreme">EXTREME</div>
       </a>
       <a href="#entity-thorn-weaver" onclick="setActive('entity-thorn-weaver')" class="terminal-card" data-threat="extreme">
         <div class="terminal-card-name">THORN WEAVER</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Darkrai (Corrupted)</span></div>
-        <div class="terminal-card-row"><span>STATUS</span><span>Active / Uncontained</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>S (High Threat)</span></div>
         <div class="terminal-threat extreme">EXTREME</div>
       </a>
     </div>
