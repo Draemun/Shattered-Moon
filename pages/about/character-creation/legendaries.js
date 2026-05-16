@@ -99,6 +99,7 @@ const legendariesPage = `
     <section class="lore-content-section">
       <h1>SPECIAL RULES</h1>
       <ul class="rules-list">
+        <li> Legendaries can strike Splinters without weapons and deal full damage. The use of weapons is preferred, but not obligatory. </li>
         <li>Paradox Legendaries share their signature moves with their classic counterparts.</li>
         <li>Zygarde cannot megaevolve and therefore, they cannot learn the PLZA signature move.</li>
         <li>Kyurem and Necrozma Variants are different Pokémon.</li>
