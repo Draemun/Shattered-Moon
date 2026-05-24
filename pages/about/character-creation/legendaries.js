@@ -46,7 +46,7 @@ const legendariesPage = `
         <tr><td>Tornadus [Evie]</td><td>found</td><td>Splintered / Neutral</td></tr>
         <tr><td>Enamorus [Peach]</td><td>/</td><td>Splintered / Hostile</td></tr>
         <tr><td>White Kyurem [Seven]</td><td>/</td><td>Intact / Neutral</td></tr>
-        <tr><td>Pecharunt [Myst]</td><td>The Subjugation</td><td>Intact / Neutrak</td></tr>
+        <tr><td>Pecharunt [Myst]</td><td>The Subjugation</td><td>Intact / Neutral</td></tr>
         <tr><td>Xerneas [Nethercard]</td><td>The Caretaker</td><td>Intact / Protective</td></tr>
         <tr><td>Lugia [Spykid]</td><td>The Ruler</td><td>Intact / Protective</td></tr>
          <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>

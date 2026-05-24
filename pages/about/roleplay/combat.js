@@ -36,7 +36,7 @@ const combatPage = `
         <tr><td>Temporary</td><td>Confusion</td><td>1/3 chance to end early; ends with accuracy boosts</td><td>Dice roll 1d3</td></tr>
         <tr><td>Temporary</td><td>Freeze</td><td>Ends when hit by Fire-type move</td><td>Dice roll 1d3</td></tr>
         <tr><td>Temporary</td><td>Sleep</td><td>Ends when hit by sound-based move</td><td>Dice roll 1d3</td></tr>
-        <tr><td>Special</td><td>Starstruck</td><td>1/2 chance move fails each turn</td><td>Permanent until cured</td></tr>
+        <tr><td>Special</td><td>Starstruck</td><td>1/3 chance move fails each turn</td><td>Permanent until cured</td></tr>
       </table>
       <p class="small-text">Destiny Knot Interaction: Reflects Starstruck back to inflictor if held</p>
     </section>
@@ -109,7 +109,7 @@ const combatPage = `
         <tr><td>Libero / Protean</td><td>Type changes with each move used (no limit)</td></tr>
         <tr><td>Gale Wings</td><td>Restored to full power; priority on all Flying-type moves</td></tr>
         <tr><td>Vivid Aura (replaces Cute Charm)</td><td>Contact hit = 1/3 chance attacker becomes Starstruck</td></tr>
-        <tr><td>Starstruck Effect (Removes Infatuation)</td><td>Afflicted Pokémon's moves fail 50% of the time</td></tr>
+        <tr><td>Starstruck Effect (Removes Infatuation)</td><td>Afflicted Pokémon’s moves have 1/3  chance to fail.</td></tr>
       </table>
     </section>
 
