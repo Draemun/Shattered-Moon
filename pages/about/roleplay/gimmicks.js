@@ -59,12 +59,78 @@ const gimmicksPage = `
     </section>
 
     <section class="lore-content-section">
+      <h1>LAQUIUM</h1>
+      <p>Laquium copies the sheer power of Ferox energy. Item slot.</p>
+      <table class="combat-table">
+        <tr><th>Details</th><th>Information</th></tr>
+        <tr><td>Type</td><td>Pokémon-made synthetic item, replicates Ferox energy without natural exposure</td></tr>
+        <tr><td>Stat Boost</td><td>Raises stats to the max of your tier for the duration</td></tr>
+        <tr><td>Duration</td><td>3 turns active, 2 turns cooldown, repeatable</td></tr>
+        <tr><td>Splinter Combat</td><td>No weapons required to attack Soul Splinters while active</td></tr>
+        <tr><td>Cost</td><td>350 (intentionally cheap to normalize market saturation)</td></tr>
+        <tr><td>Withdrawal</td><td>Must be noted in sheet. Lasts 2 RPs</td></tr>
+      </table>
+      <p>During the active phase the character does not feel injuries. The wounds only register when the cooldown hits, at which point the pain is severe. This creates a dangerous incentive to push straight into the next cycle.</p>
+      <h3>Targeting Roll (d6 at start of each active turn)</h3>
+      <table class="combat-table">
+        <tr><th>Turn</th><th>Ally Hit Range</th></tr>
+        <tr><td>Turn 1</td><td>1 hits allies, rest is safe</td></tr>
+        <tr><td>Turn 2</td><td>1-2 hits allies, rest is safe</td></tr>
+        <tr><td>Turn 3</td><td>1-3 hits allies, rest is safe</td></tr>
+      </table>
+      <p class="small-text">Use a second dice to determine which ally is struck on a hit. Counter resets at the start of each new active phase.</p>
+    </section>
+
+    <section class="lore-content-section">
+      <h1>RAKURIUM</h1>
+      <p>Rakurium is the strongest version of Laquium. Item slot, can power up a gimmick.</p>
+      <table class="combat-table">
+        <tr><th>Details</th><th>Information</th></tr>
+        <tr><td>Type</td><td>Pokémon-made synthetic item, replicates Ferox energy without natural exposure</td></tr>
+        <tr><td>Stat Boost</td><td>Raises stats to 5,000 + secondary ability: No Guard</td></tr>
+        <tr><td>Duration</td><td>5 turns active, 2 turns cooldown, repeatable</td></tr>
+        <tr><td>Splinter Combat</td><td>No weapons required to attack Soul Splinters while active</td></tr>
+        <tr><td>Availability</td><td>Giveaway only</td></tr>
+        <tr><td>Withdrawal</td><td>Must be noted in sheet. Lasts 3 RPs</td></tr>
+      </table>
+      <p>During the active phase the character does not feel injuries. The wounds only register when the cooldown hits, at which point the pain is severe. This creates a dangerous incentive to push straight into the next cycle.</p>
+      <h3>Targeting Roll (d6 at start of each active turn)</h3>
+      <table class="combat-table">
+        <tr><th>Turn</th><th>Ally Hit Range</th></tr>
+        <tr><td>Turn 1</td><td>1 hits allies, rest is safe</td></tr>
+        <tr><td>Turn 2</td><td>1-2 hits allies, rest is safe</td></tr>
+        <tr><td>Turn 3</td><td>1-3 hits allies, rest is safe</td></tr>
+        <tr><td>Turn 4</td><td>1-4 hits allies, rest is safe</td></tr>
+        <tr><td>Turn 5</td><td>1-5 hits allies, rest is safe</td></tr>
+      </table>
+      <p class="small-text">Use a second dice to determine which ally is struck on a hit. Counter resets at the start of each new active phase.</p>
+    </section>
+
+    <section class="lore-content-section">
+      <h1>FEROX</h1>
+      <p>Ferox is a natural phenomenon caused by the Void. The Pokémon does not choose this state. The gimmick crystallizes only after they are defeated, manifesting as a physical item.</p>
+      <table class="combat-table">
+        <tr><th>Details</th><th>Information</th></tr>
+        <tr><td>Trigger</td><td>Naturally triggered by excessive Infinity Energy or Void Echoes exposure</td></tr>
+        <tr><td>Eligible Forms</td><td>Mega Ferox, Dynamax/Gigantamax Ferox, Tera Ferox (Z-Moves do not qualify)</td></tr>
+        <tr><td>Stat Boost</td><td>Stats raised to maximum ceiling (3,000-4,000 or 5,000)</td></tr>
+        <tr><td>End Condition</td><td>Mission ends only when the Pokémon is knocked out (mandatory)</td></tr>
+        <tr><td>Difficulty</td><td>??? rated. Ferox tag required on battle</td></tr>
+        <tr><td>Min Stats</td><td>800 required to participate</td></tr>
+        <tr><td>Approval</td><td>All proposals must go through ModMail</td></tr>
+      </table>
+      <p>Risk of maiming and death is significantly elevated.</p>
+      <p>At the start of each turn, roll a dice to determine targeting. Each character is assigned a number.</p>
+    </section>
+
+    <section class="lore-content-section">
       <h1>GIMMICK INTERACTIONS</h1>
       <ul class="rules-list">
         <li>Z-Move beats Mega</li>
         <li>Mega beats Tera</li>
         <li>Tera beats Dynamax</li>
         <li>Dynamax beats Z-Move</li>
+        <li>Rakuium can work together with any gimmick in the item slot.</li>
       </ul>
       <p class="emphasis-text">DO NOT ABUSE THEM.</p>
     </section>
