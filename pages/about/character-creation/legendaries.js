@@ -49,7 +49,9 @@ const legendariesPage = `
         <tr><td>Pecharunt [Myst]</td><td>The Subjugation</td><td>Intact / Neutral</td></tr>
         <tr><td>Xerneas [Nethercard]</td><td>The Caretaker</td><td>Intact / Protective</td></tr>
         <tr><td>Lugia [Spykid]</td><td>The Ruler</td><td>Intact / Protective</td></tr>
-         <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
+        <tr><td>Virizion [Ammy]</td><td>/</td><td>Intact / Protective</td></tr>
+        <tr><td>Black Kyurem [Kyurem]</td><td>Ideal Ambassador</td><td>Intact / Protective</td></tr>
+        <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
       </table>
     </section>
 
@@ -70,10 +72,8 @@ const legendariesPage = `
         <tr><td>Heatran</td><td>/</td><td>/</td></tr>
         <tr><td>Cobalion</td><td>/</td><td>/</td></tr>
         <tr><td>Terrakion</td><td>/</td><td>/</td></tr>
-        <tr><td>Virizion</td><td>/</td><td>/</td></tr>
         <tr><td>Thundurus</td><td>/</td><td>/</td></tr>
         <tr><td>Landorus</td><td>/</td><td>/</td></tr>
-        <tr><td>Black Kyurem</td><td>/</td><td>/</td></tr>
         <tr><td>Zygarde</td><td>/</td><td>/</td></tr>
         <tr><td>Dusk Mane Necrozma</td><td>/</td><td>/</td></tr>
         <tr><td>Zamazenta</td><td>/</td><td>/</td></tr>
