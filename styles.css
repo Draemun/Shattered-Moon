@@ -1864,7 +1864,7 @@ footer p {
 }
 .tl-era {
   font-family: 'Courier New', monospace;
-  font-size: 9px;
+  font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-secondary);
@@ -1893,6 +1893,17 @@ footer p {
   margin-bottom: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.tl-panel-period {
+  display: block;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: none;
+  text-shadow: none;
+  margin-top: 4px;
 }
 .tl-panel-body p {
   color: var(--text-secondary);
