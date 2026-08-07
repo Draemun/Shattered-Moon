@@ -29,7 +29,7 @@ const noteworthiesPage = `
       <table class="combat-table">
         <tr><th>Role</th><th>Availability</th></tr>
         <tr><td>Scout Echelon</td><td>Silas</td></tr>
-        <tr><td>Builder Echelon</td><td>Valerie</td></tr>
+        <tr><td>Builder Echelon</td><td>Spot Open</td></tr>
         <tr><td>Provider Echelon</td><td>Xahria</td></tr>
         <tr><td>Warden Echelon</td><td>Mayworth</td></tr>
         <tr><td>Chronicler Echelon</td><td>Miracle</td></tr>
@@ -70,7 +70,7 @@ const noteworthiesPage = `
       <h1>PARLIAMENT & NOTEWORTHIES</h1>
       <table class="combat-table">
         <tr><th>Role</th><th>Availability</th></tr>
-        <tr><td>Parliament Representative</td><td>Twirl - Mystic Forest<br>Plattima - Aetheria<br>Sirius - Burning Badlands<br>2 Positions Open</td></tr>
+        <tr><td>Parliament Representative</td><td>Twirl - Mystic Forest<br>Plattima - Aetheria<br>3 Positions Open</td></tr>
         <tr><td>Noteworthy Character</td><td>Several Positions Open</td></tr>
       </table>
       <p>Representatives start at base BST and immediately get Egg + Amulet.</p>

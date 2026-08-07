@@ -50,6 +50,7 @@ const legendariesPage = `
         <tr><td>Xerneas [Nethercard]</td><td>The Caretaker</td><td>Intact / Protective</td></tr>
         <tr><td>Lugia [Spykid]</td><td>The Ruler</td><td>Intact / Protective</td></tr>
         <tr><td>Virizion [Ammy]</td><td>/</td><td>Intact / Protective</td></tr>
+        <tr><td>Cobalion [Cypher]</td><td>The Interceptor</td><td>Intact / Protective</td></tr>
         <tr><td>Black Kyurem [Kyurem]</td><td>Ideal Ambassador</td><td>Intact / Protective</td></tr>
         <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
       </table>
@@ -70,7 +71,6 @@ const legendariesPage = `
         <tr><td>Kyogre</td><td>/</td><td>/</td></tr>
         <tr><td>Groudon</td><td>/</td><td>/</td></tr>
         <tr><td>Heatran</td><td>/</td><td>/</td></tr>
-        <tr><td>Cobalion</td><td>/</td><td>/</td></tr>
         <tr><td>Terrakion</td><td>/</td><td>/</td></tr>
         <tr><td>Thundurus</td><td>/</td><td>/</td></tr>
         <tr><td>Landorus</td><td>/</td><td>/</td></tr>
