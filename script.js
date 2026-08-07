@@ -1,6 +1,7 @@
 const pages = {
   home: homePage,
   lore: lorePage,
+  timeline: timelinePage,
   maps: mapsPage,
   archives: archivesPage,
   'echo-miralen': echoMiralenPage,
@@ -94,6 +95,7 @@ function router() {
   linkifyKeywords(document.getElementById('app'))
   updateIndicator(hash)
   if (hash === 'maps') initMap()
+  document.dispatchEvent(new Event('routeRendered'))
   window.scrollTo(0, 0)
 }
 
@@ -118,6 +120,7 @@ window.addEventListener('load', router)
 const pageIndex = {
   'home': { title: 'Home', content: homePage },
   'lore': { title: 'Lore', content: lorePage },
+  'timeline': { title: 'Timeline', content: timelinePage },
   'maps': { title: 'Maps', content: mapsPage },
   'archives': { title: 'Archives', content: archivesPage },
   'echo-miralen': { title: 'Echo of Miralen', content: echoMiralenPage },
