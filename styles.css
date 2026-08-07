@@ -1806,3 +1806,108 @@ footer p {
     border-top: 1px solid var(--accent-red);
     filter: none;
 }
+
+.tl-track {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: 2.5rem 0 0;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tl-track::-webkit-scrollbar { display: none; }
+.tl-line {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent-purple) 10%, var(--accent-purple) 90%, transparent);
+  opacity: 0.4;
+}
+.tl-node-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+}
+.tl-node {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.25rem 0.5rem;
+}
+.tl-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-purple);
+  background: var(--bg-dark);
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  position: relative;
+  z-index: 1;
+  opacity: 0.5;
+}
+.tl-node:hover .tl-dot,
+.tl-node.active .tl-dot {
+  border-color: var(--accent-cyan);
+  background: var(--accent-purple);
+  box-shadow: 0 0 10px var(--glow-purple);
+  opacity: 1;
+}
+.tl-era {
+  font-family: 'Courier New', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-align: center;
+  transition: color 0.2s;
+  line-height: 1.3;
+}
+.tl-node:hover .tl-era,
+.tl-node.active .tl-era { color: var(--accent-purple); }
+
+.tl-panel {
+  margin-top: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-top: 2px solid var(--accent-purple);
+  border-radius: 0 0 8px 8px;
+  padding: 1.75rem 2rem;
+  animation: tl-fade 0.2s ease;
+}
+.tl-panel-era {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-purple);
+  text-shadow: 0 0 10px var(--glow-purple);
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.tl-panel-body p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+
+@keyframes tl-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .tl-node-wrap { min-width: 60px; }
+  .tl-era { font-size: 8px; letter-spacing: 0.05em; }
+  .tl-panel { padding: 1.25rem; }
+}
