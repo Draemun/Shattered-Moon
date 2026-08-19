@@ -112,7 +112,6 @@ const rpRulesPage = `
       </ul>
     </section>
     
-    <p style="text-align: center; margin-top: 30px;"><a href="https://discord.com/channels/1426570529200017549/1427572788474023987" target="_blank" class="discord-link">View Original</a></p>
   </div>
 `
 

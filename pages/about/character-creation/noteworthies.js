@@ -29,7 +29,7 @@ const noteworthiesPage = `
       <table class="combat-table">
         <tr><th>Role</th><th>Availability</th></tr>
         <tr><td>Scout Echelon</td><td>Silas</td></tr>
-        <tr><td>Builder Echelon</td><td>Spot Open</td></tr>
+        <tr><td>Builder Echelon</td><td>Cyanide</td></tr>
         <tr><td>Provider Echelon</td><td>Xahria</td></tr>
         <tr><td>Warden Echelon</td><td>Mayworth</td></tr>
         <tr><td>Chronicler Echelon</td><td>Miracle</td></tr>
@@ -77,6 +77,5 @@ const noteworthiesPage = `
       <p>At 30 endorsements the character becomes automatically a Noteworthy.</p>
     </section>
 
-    <p style="text-align: center; margin-top: 30px;"><a href="https://docs.google.com/document/d/1CxwIRsTD9zvJz6zKEw29JO2B4b-UHovtcfMH3PIQtNw/edit?tab=t.st8n4aupkkxl" target="_blank" class="discord-link">View Original</a></p>
   </div>
 `

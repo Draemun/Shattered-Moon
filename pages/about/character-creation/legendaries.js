@@ -53,6 +53,8 @@ const legendariesPage = `
         <tr><td>Cobalion [Cypher]</td><td>The Interceptor</td><td>Intact / Protective</td></tr>
         <tr><td>Black Kyurem [Kyurem]</td><td>Ideal Ambassador</td><td>Intact / Protective</td></tr>
         <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
+        <tr><td>Zygarde [Vortex]</td><td>The Collective</td><td> Intact / Protective</td></tr>
+
       </table>
     </section>
 
@@ -74,7 +76,6 @@ const legendariesPage = `
         <tr><td>Terrakion</td><td>/</td><td>/</td></tr>
         <tr><td>Thundurus</td><td>/</td><td>/</td></tr>
         <tr><td>Landorus</td><td>/</td><td>/</td></tr>
-        <tr><td>Zygarde</td><td>/</td><td>/</td></tr>
         <tr><td>Dusk Mane Necrozma</td><td>/</td><td>/</td></tr>
         <tr><td>Zamazenta</td><td>/</td><td>/</td></tr>
         <tr><td>Eternatus</td><td>/</td><td>/</td></tr>
@@ -107,6 +108,5 @@ const legendariesPage = `
       </ul>
     </section>
 
-    <p style="text-align: center; margin-top: 30px;"><a href="https://docs.google.com/document/d/1CxwIRsTD9zvJz6zKEw29JO2B4b-UHovtcfMH3PIQtNw/edit?tab=t.0" target="_blank" class="discord-link">View Original</a></p>
   </div>
 `
