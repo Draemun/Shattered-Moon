@@ -12,37 +12,37 @@ const entityLogPage = `
       <a href="#entity-faraway" onclick="setActive('entity-faraway')" class="terminal-card" data-threat="passive">
         <div class="terminal-card-name">FARAWAY</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Cresselia (Remnant)</span></div>
-        <div class="terminal-card-row"><span>RANK</span><span>D (Moderate to No Threat)</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>D (Minimal to No Threat)</span></div>
         <div class="terminal-threat passive">PASSIVE</div>
       </a>
       <a href="#entity-the-library" onclick="setActive('entity-the-library')" class="terminal-card" data-threat="passive">
         <div class="terminal-card-name">THE LIBRARY</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>None (Sub-Dimension)</span></div>
-        <div class="terminal-card-row"><span>THREAT</span><span>None</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>D (Minimal to No Threat)</span></div>
         <div class="terminal-threat passive">PASSIVE</div>
       </a>
       <a href="#entity-found" onclick="setActive('entity-found')" class="terminal-card" data-threat="moderate">
         <div class="terminal-card-name">found</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Tornadus</span></div>
-        <div class="terminal-card-row"><span>RANK</span><span>S+ (Moderate to High Threat)</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>B (Moderate Threat)</span></div>
         <div class="terminal-threat moderate">MODERATE</div>
       </a>
       <a href="#entity-alone" onclick="setActive('entity-alone')" class="terminal-card" data-threat="extreme">
         <div class="terminal-card-name">THE ALONE</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Entei (Corrupted)</span></div>
-        <div class="terminal-card-row"><span>RANK</span><span>S+ (High Threat)</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>S+ (Extreme Threat)</span></div>
         <div class="terminal-threat extreme">EXTREME</div>
       </a>
       <a href="#entity-ambush" onclick="setActive('entity-ambush')" class="terminal-card" data-threat="extreme">
         <div class="terminal-card-name">AMBUSH</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Varied</span></div>
-        <div class="terminal-card-row"><span>THREAT</span><span>Extreme</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>S+ (Extreme Threat)</span></div>
         <div class="terminal-threat extreme">EXTREME</div>
       </a>
       <a href="#entity-no-mons" onclick="setActive('entity-no-mons')" class="terminal-card" data-threat="extreme">
         <div class="terminal-card-name">NO_MONS / NOT_THINGS</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Ditto</span></div>
-        <div class="terminal-card-row"><span>THREAT</span><span>High</span></div>
+        <div class="terminal-card-row"><span>RANK</span><span>A (Elevated Threat)</span></div>
         <div class="terminal-threat extreme">EXTREME</div>
       </a>
       <a href="#entity-thorn-weaver" onclick="setActive('entity-thorn-weaver')" class="terminal-card" data-threat="extreme">
@@ -68,7 +68,7 @@ const entityFoundPage = `
         <div class="terminal-meta">
           <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>found</span></div>
           <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Tornadus</span></div>
-          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-moderate">MODERATE</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-moderate">B (Moderate Threat)</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span>Minimal</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Daily Anomaly Logs</span></div>
           <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Restricted / Guild Access Required</span></div>
@@ -110,7 +110,7 @@ const entityFarawayPage = `
         <div class="terminal-meta">
           <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>Faraway</span></div>
           <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Cresselia (Remnant)</span></div>
-          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-passive">PASSIVE / CONDITIONAL PROTECTOR</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-passive">D (Minimal to No Threat) / CONDITIONAL PROTECTOR</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span>None Observable</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Chroniclers Entity Log</span></div>
           <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Public Record</span></div>
@@ -154,7 +154,7 @@ const entityThornWeaverPage = `
         <div class="terminal-meta">
           <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>Thorn Weaver</span></div>
           <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Darkrai (Corrupted Variant)</span></div>
-          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">EXTREME / HIGH-PRIORITY ELIMINATION</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">S+ (Extreme Threat) / HIGH-PRIORITY ELIMINATION</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span class="val-extreme">Malicious Intent Confirmed</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Chroniclers Entity Log</span></div>
           <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Restricted / Guild Access Required</span></div>
@@ -195,7 +195,7 @@ const entityAlonePage = `
         <div class="terminal-meta">
           <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>The Alone</span></div>
           <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Entei (Corrupted)</span></div>
-          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">EXTREME / HIGH-PRIORITY AVOIDANCE</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">S+ (Extreme Threat) / HIGH-PRIORITY AVOIDANCE</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span class="val-extreme">Non-Communicative Under Standard Conditions</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Chroniclers Entity Log</span></div>
           <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Restricted / Guild Access Required</span></div>
@@ -239,7 +239,7 @@ const entityNoMonsPage = `
         <div class="terminal-meta">
           <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>No_Mons or Not_Things</span></div>
           <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Ditto</span></div>
-          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">HIGH</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">A (Elevated Threat)</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span class="val-extreme">High</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
         </div>
@@ -270,7 +270,7 @@ const entityAmbushPage = `
         <div class="terminal-meta">
           <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>Ambush</span></div>
           <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Varied</span></div>
-          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">EXTREME</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">S+ (Extreme Threat)</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span>None</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
         </div>
@@ -303,7 +303,7 @@ const entityTheLibraryPage = `
         <div class="terminal-meta">
           <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>The Library (Repurposed into the Chronicler's Library)</span></div>
           <div class="terminal-meta-row"><span class="key">SPECIES</span><span>None (Sub-Dimension)</span></div>
-          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-passive">NONE</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-passive">D (Minimal to No Threat)</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span>None</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
         </div>
