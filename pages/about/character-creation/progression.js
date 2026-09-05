@@ -19,7 +19,7 @@ const progressionPage = `
       <table class="combat-table">
         <tr><th>Currency</th><th>Conversion</th></tr>
         <tr><td>Void Shards</td><td>10 Shards = 1 Token</td></tr>
-        <tr><td>Void Tokens</td><td>1 Token = 1d6 roll for a set list of prizes [TBA]</td></tr>
+        <tr><td>Void Tokens</td><td>1 Token = roll for a set list of prizes</td></tr>
       </table>
     </section>
 
