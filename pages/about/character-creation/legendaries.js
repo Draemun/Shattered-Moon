@@ -52,8 +52,9 @@ const legendariesPage = `
         <tr><td>Virizion [Ammy]</td><td>/</td><td>Intact / Protective</td></tr>
         <tr><td>Cobalion [Cypher]</td><td>The Interceptor</td><td>Intact / Protective</td></tr>
         <tr><td>Black Kyurem [Kyurem]</td><td>Ideal Ambassador</td><td>Intact / Protective</td></tr>
-        <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
         <tr><td>Zygarde [Vortex]</td><td>The Collective</td><td> Intact / Protective</td></tr>
+        <tr><td>Wo-Chien [Echo]</td><td>/</td><td>Unknown</td></tr>
+
 
       </table>
     </section>
