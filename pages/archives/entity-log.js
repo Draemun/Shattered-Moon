@@ -15,6 +15,12 @@ const entityLogPage = `
         <div class="terminal-card-row"><span>RANK</span><span>D (Moderate to No Threat)</span></div>
         <div class="terminal-threat passive">PASSIVE</div>
       </a>
+      <a href="#entity-the-library" onclick="setActive('entity-the-library')" class="terminal-card" data-threat="passive">
+        <div class="terminal-card-name">THE LIBRARY</div>
+        <div class="terminal-card-row"><span>SPECIES</span><span>None (Sub-Dimension)</span></div>
+        <div class="terminal-card-row"><span>THREAT</span><span>None</span></div>
+        <div class="terminal-threat passive">PASSIVE</div>
+      </a>
       <a href="#entity-found" onclick="setActive('entity-found')" class="terminal-card" data-threat="moderate">
         <div class="terminal-card-name">found</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Tornadus</span></div>
@@ -25,6 +31,18 @@ const entityLogPage = `
         <div class="terminal-card-name">THE ALONE</div>
         <div class="terminal-card-row"><span>SPECIES</span><span>Entei (Corrupted)</span></div>
         <div class="terminal-card-row"><span>RANK</span><span>S+ (High Threat)</span></div>
+        <div class="terminal-threat extreme">EXTREME</div>
+      </a>
+      <a href="#entity-ambush" onclick="setActive('entity-ambush')" class="terminal-card" data-threat="extreme">
+        <div class="terminal-card-name">AMBUSH</div>
+        <div class="terminal-card-row"><span>SPECIES</span><span>Varied</span></div>
+        <div class="terminal-card-row"><span>THREAT</span><span>Extreme</span></div>
+        <div class="terminal-threat extreme">EXTREME</div>
+      </a>
+      <a href="#entity-no-mons" onclick="setActive('entity-no-mons')" class="terminal-card" data-threat="extreme">
+        <div class="terminal-card-name">NO_MONS / NOT_THINGS</div>
+        <div class="terminal-card-row"><span>SPECIES</span><span>Ditto</span></div>
+        <div class="terminal-card-row"><span>THREAT</span><span>High</span></div>
         <div class="terminal-threat extreme">EXTREME</div>
       </a>
       <a href="#entity-thorn-weaver" onclick="setActive('entity-thorn-weaver')" class="terminal-card" data-threat="extreme">
@@ -205,5 +223,98 @@ const entityAlonePage = `
       </div>
     </div>
     <p style="text-align: center; margin-top: 30px;"><a href="#" target="_blank" class="discord-link">View Original</a></p>
+  </div>
+`
+
+const entityNoMonsPage = `
+  <div class="container">
+    <div class="terminal-page">
+      <div class="terminal-header">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot" style="background: #fbbf24; box-shadow: 0 0 6px rgba(251,191,36,0.4);"></div>
+        <div class="terminal-dot" style="background: var(--accent-red); box-shadow: 0 0 6px rgba(239,68,68,0.4);"></div>
+        <span class="terminal-header-title">CHRONICLERS DB // ENTITY LOG // NO_MONS / NOT_THINGS <span class="terminal-cursor"></span></span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-meta">
+          <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>No_Mons or Not_Things</span></div>
+          <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Ditto</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">HIGH</span></div>
+          <div class="terminal-meta-row"><span class="key">ANGER</span><span class="val-extreme">High</span></div>
+          <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
+        </div>
+
+        <div class="terminal-section-label">ANOMALOUS PROPERTIES</div>
+        <p class="terminal-text">They seem devoid of any soul or mind of their own, not too dissimilar to most husks or splinters. But they seem to be driven by a singular purpose: Replacement. This leads me to believe that perhaps some higher level entity is giving them commands or controlling them in some way. They start by mimicking a host target with low accuracy. They seem to struggle the most with limbs, often becoming longer and larger than their host target. But over time, they become more and more accurate as they better learn. While they can seemingly be damaged, it is highly advised to avoid attacking them, especially with moves or abilities. Once used, they will learn it, regardless if it doesn't match the moveset of their host target. Therefore, if their body has become indistinguishable from its host, seeing the usage of an impossible move or ability could be a tell. They seem to desire information of all sorts, and can acquire them by goading you into talking or even thinking about certain subjects. It is advised that if you possess sensitive information that you avoid thinking about it at all costs. Their aggression level starts low, simply observing their target. However, as they learn more and perfect their copy, they will become more aggressive and attempt to kill their host target. Its advised that you seek out the closest entity that strikes without discernment and goad it to attack the No_Mons. This seems to confuse them and will result in their death.</p>
+        <div class="terminal-warning">// NOTE: While I have dubbed them No_Mons. They seem to refer to themselves as Not_Things. As such, I have included both names.</div>
+
+        <div class="terminal-section-label">LOG 1</div>
+        <p class="terminal-text">I had taken a team of guild members to help me investigate some ruins in order to try to find more information on a prophecy that might help us obtain a weapon to fight back against Arceus and its forces. We didn't make much progress before running into No_Mons.</p>
+        <p class="terminal-text">After some initial caution, we fled in the direction of the nearest tower. However, a thought hit me that if their goal was to replace us, then they should not get anywhere near a waystone. So instead, I took a calculated risk to play the long game and headed towards a nearby cave with the group. In their fury, the entities caused a cave in and I got separated from my group. I thought I rejoined with one member, only to discover that it was a No_Mon. I fled to attempt to rejoin my team, out of concern that they were stuck with the second No_Mon. That is when my gamble payed off. A Sub_Anomaly_1 had spawned in the caves. I kited it around back to the No_Mon chasing me, and at first, it did not respond to the presence of the particles. That quickly changed however when it started to feel pain. It panicked but could not figure out the source, it dies shortly thereafter.</p>
+        <p class="terminal-text">I continued kiting the Sub_Anomaly_1 to the rest of the group until it made contact with the No_Mon disguised as myself. Again, same result. Initial panic before death. Only after ascertaining that the threat had passed, I pulled out my ring and led my team to the Library. Better to navigate that endless maze to the waystone than risking any more encounters.</p>
+      </div>
+    </div>
+  </div>
+`
+
+const entityAmbushPage = `
+  <div class="container">
+    <div class="terminal-page">
+      <div class="terminal-header">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot" style="background: #fbbf24; box-shadow: 0 0 6px rgba(251,191,36,0.4);"></div>
+        <div class="terminal-dot" style="background: var(--accent-red); box-shadow: 0 0 6px rgba(239,68,68,0.4);"></div>
+        <span class="terminal-header-title">CHRONICLERS DB // ENTITY LOG // AMBUSH <span class="terminal-cursor"></span></span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-meta">
+          <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>Ambush</span></div>
+          <div class="terminal-meta-row"><span class="key">SPECIES</span><span>Varied</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">EXTREME</span></div>
+          <div class="terminal-meta-row"><span class="key">ANGER</span><span>None</span></div>
+          <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
+        </div>
+
+        <div class="terminal-section-label">ANOMALOUS PROPERTIES</div>
+        <p class="terminal-text">Ambush appears as a random pokemon, always the form as a pokemon killed by another entity. However, tendrils seem interspersed in the body, as if trying to hold it together. A long tendril extends to the sky, fading away after a certain point. If you know the subject, it will attempt to vocalize to draw you in.</p>
+        <div class="terminal-warning">DO NOT ENGAGE. I REPEAT. DO NOT GET CLOSE TO AN AMBUSH.<br><br>DOING SO WILL DRAW THE BROKEN END, AKA DIALGA, TO YOUR LOCATION. YOU HAVE BEEN WARNED.<br><br>If you see one, hide or flee. It will vanish on its own after a while.</div>
+
+        <div class="terminal-section-label">LOG 1</div>
+        <p class="terminal-text">There is not much to say about this, as the encounter was short. I was doing maintenance on Station Beta when I heard a strange...fleshy sound come from outside the station. That is when I saw Ambush. It was controlling the body of a deceased Guild Member, a Florges. Out of respect to their family, I will not reveal the identity of the Guild member. The Florges left arm was...detached, tendrils keeping it attached to its main body, as if trying to pretend as if there was no damage. The movement was strange. I couldn't tell if the tendrils were trying to mimic the movement of a living body, or if some part of consciousness remained. I suspect that was the point.</p>
+        <p class="terminal-text">As this was the first sighting of an Ambush, I made the error of drawing too close. I had hoped that I could strike at the tendrils with my hammer and try to recover the body. However, as I drew near, away from the safety of my tower, the body suddenly was dragged up to the heavens, vanishing.</p>
+        <p class="terminal-text">The dread I felt. I just walked into a trap and I knew it.</p>
+        <div class="terminal-quote">I see you</div>
+        <p class="terminal-text">Without even thinking, I quickly flew back up to the tower, reaching the waystone as I felt an oppressive presence behind me. I teleported myself back to Last Haven only to realize how lucky I had been. Staring in the direction of where the tower was in the safety of its protective barrier, I could see The Broken End investigating my tower. As everyone outside of the barrier was instantly recalled, it grew frustrated at the lack of a target and eventually left.</p>
+      </div>
+    </div>
+  </div>
+`
+
+const entityTheLibraryPage = `
+  <div class="container">
+    <div class="terminal-page">
+      <div class="terminal-header">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot" style="background: #fbbf24; box-shadow: 0 0 6px rgba(251,191,36,0.4);"></div>
+        <div class="terminal-dot" style="background: var(--accent-red); box-shadow: 0 0 6px rgba(239,68,68,0.4);"></div>
+        <span class="terminal-header-title">CHRONICLERS DB // ENTITY LOG // THE LIBRARY <span class="terminal-cursor"></span></span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-meta">
+          <div class="terminal-meta-row"><span class="key">SUBJECT</span><span>The Library (Repurposed into the Chronicler's Library)</span></div>
+          <div class="terminal-meta-row"><span class="key">SPECIES</span><span>None (Sub-Dimension)</span></div>
+          <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-passive">NONE</span></div>
+          <div class="terminal-meta-row"><span class="key">ANGER</span><span>None</span></div>
+          <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
+        </div>
+
+        <div class="terminal-section-label">ANOMALOUS PROPERTIES</div>
+        <p class="terminal-text">It is an alternate dimension discovered in the Deep Caves, south of Veldenroot. There is a rift with a permanent entrance to the dimension deep within the cave. No entity can enter the rift, despite the intense dangers of the caves. The only other entrance is via a Hoopa Ring, personally kept on Commander Avira's person at all times. Using said ring will place anyone entering it in the same relative location as they were in the surface world to a 1:1 distance ratio. Those attuned to the Waystone network can also enter that way, as a waystone has been placed inside.</p>
+        <p class="terminal-text">Inside the dimension is an endless Library. A maze of bookshelves and books. Shifting and constantly changing, it is easy to get lost. However, one's relative position never changes, so if one has a good sense of direction, they can still find their way. No entity can appear here, making it the only truly safe location outside of the Last Haven.</p>
+        <p class="terminal-text">While one can get used to it, the Library feels wrong. Despite any apparent light source, anyone inside the library can still see a good distance away, assuming the view is not obstructed by books. Everything is monochrome; black and white. The books are either completely empty, a jumbled mess of text, or occasionally mirrors logs written by the Chronicler's Guild. Why this happens is unknown. The bookshelves and books have no other anomalous properties, making them valuable storage space. Temperature at the base level (equivalent to ground level in the surface world) is mild, near room temperature. Contrary to how elevation works in the surface world, the higher one climbs, the hotter it gets and the lower one climbs, the colder. Though neither reach a point to where it would be dangerous to exist. It seems that moving bookshelves or even the books in any way will stabilize the immediate area and prevent things from shifting around.</p>
+        <p class="terminal-text">At the same relative location as the Chronicler's HQ in Last Haven, a Base was constructed and a waystone placed. Outside materials were brought in to construct the base, giving some color to an otherwise mind-numbingly achromatic world. There are plenty of supplies and other amenities installed to allow living in this base. This ranges from an abundance of living quarters, to study areas, to botanical facilities. In the bookshelves forming the walls to the base, hard copies of logs and documents made by the Chonicler's are placed, as a back up source of information should digital means fail. A skeleton crew is to be staffed at all times, with rotating shifts, to help maintain facilities such as the greenhouse as well as general upkeep of the base. Members of the Chroniclers are encouraged to use this space for study and documentation.</p>
+        <p class="terminal-text">While this has been deemed unlikely, the reason for the excessive amount of living quarters is to serve as an evacuation point should any settlement fall or become breached. Thankfully such areas are already protected so this serves merely as a worst case scenario back up plan.</p>
+      </div>
+    </div>
   </div>
 `
