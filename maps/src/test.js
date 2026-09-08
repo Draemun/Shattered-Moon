@@ -1040,6 +1040,9 @@ container.addEventListener('mousedown', (e) => {
 
   wrap.addEventListener('touchend', (e) => {
     if (e.touches.length < 2) initialDistance = 0;
+    if (e.touches.length === 1) {
+      start = { x: e.touches[0].clientX - _tmPointX, y: e.touches[0].clientY - _tmPointY };
+    }
     if (e.touches.length === 0) panning = false;
   });
 }
