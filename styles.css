@@ -1329,6 +1329,80 @@ footer p {
     }
 }
 
+.map-zoom-controls {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.map-zoom-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--accent-purple);
+    color: var(--text-primary);
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.map-zoom-btn:hover {
+    background: var(--accent-purple);
+    box-shadow: 0 0 10px var(--glow-purple);
+}
+
+.map-container.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    z-index: 500;
+    background: var(--bg-dark);
+    overflow: hidden;
+    margin: 0;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-fullscreen-exit {
+    position: fixed;
+    top: 16px;
+    right: 70px;
+    z-index: 501;
+    background: var(--bg-secondary);
+    border: 1px solid var(--accent-red);
+    color: var(--accent-red);
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.map-fullscreen-exit:hover {
+    background: var(--accent-red);
+    color: white;
+}
+
+.map-fullscreen-exit.visible {
+    display: flex;
+}
+
 .map-links {
     margin-top: 20px;
     padding-top: 20px;

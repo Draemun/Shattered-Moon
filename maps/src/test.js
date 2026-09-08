@@ -748,6 +748,13 @@ const IMG_H = 2064;
 
 function getMiralenMapContent() { return `
   <div>
+    <div class="map-zoom-controls">
+      <button class="map-zoom-btn" onclick="testMapZoom(0.3)">+</button>
+      <button class="map-zoom-btn" onclick="testMapZoom(-0.3)">-</button>
+      <button class="map-zoom-btn" onclick="testMapResetZoom()">RESET</button>
+      <button class="map-zoom-btn" onclick="testMapEnterFullscreen()">&#x26F6; FULLSCREEN</button>
+    </div>
+    <div id="mapFullscreenExit" class="map-fullscreen-exit" onclick="testMapExitFullscreen()">&times;</div>
     <div class="map-container" id="testMapContainer" style="overflow: hidden; cursor: grab;">
       <div style="position: relative; display: inline-block; width: 100%;">
         <img src="maps/png/test.png" alt="Test Map" class="map-image" style="display: block; width: 100%;">
@@ -946,6 +953,24 @@ function testMapResetZoom() {
   wrap.style.transform = `translate(0px, 0px) scale(1)`;
 }
 
+function testMapEnterFullscreen() {
+  const container = document.getElementById('testMapContainer');
+  const btn = document.getElementById('mapFullscreenExit');
+  if (!container) return;
+  container.classList.add('fullscreen');
+  btn.classList.add('visible');
+  testMapResetZoom();
+}
+
+function testMapExitFullscreen() {
+  const container = document.getElementById('testMapContainer');
+  const btn = document.getElementById('mapFullscreenExit');
+  if (!container) return;
+  container.classList.remove('fullscreen');
+  btn.classList.remove('visible');
+  testMapResetZoom();
+}
+
 function initTestMap() {
   _tmScale = 1; _tmPointX = 0; _tmPointY = 0;
   const wrap = document.querySelector('#testMapContainer > div');
@@ -956,25 +981,22 @@ function initTestMap() {
   let panning = false;
   let start = { x: 0, y: 0 };
   let initialDistance = 0;
+  let scaleAtPinchStart = 1;
   let pinchCenter = { x: 0, y: 0 };
-
   const container = document.getElementById('testMapContainer');
-  container.addEventListener('mousedown', (e) => {
+container.addEventListener('mousedown', (e) => {
+    e.preventDefault();
     panning = true;
     start = { x: e.clientX - _tmPointX, y: e.clientY - _tmPointY };
     container.style.cursor = 'grabbing';
   });
-  container.addEventListener('mousemove', (e) => {
+  document.addEventListener('mousemove', (e) => {
     if (!panning) return;
     _tmPointX = e.clientX - start.x;
     _tmPointY = e.clientY - start.y;
     wrap.style.transform = `translate(${_tmPointX}px, ${_tmPointY}px) scale(${_tmScale})`;
   });
-  container.addEventListener('mouseup', () => {
-    panning = false;
-    container.style.cursor = 'grab';
-  });
-  container.addEventListener('mouseleave', () => {
+  document.addEventListener('mouseup', () => {
     panning = false;
     container.style.cursor = 'grab';
   });
@@ -985,9 +1007,9 @@ function initTestMap() {
       const dx = e.touches[0].clientX - e.touches[1].clientX;
       const dy = e.touches[0].clientY - e.touches[1].clientY;
       initialDistance = Math.sqrt(dx * dx + dy * dy);
-      const rect = wrap.getBoundingClientRect();
-      pinchCenter.x = ((e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left - _tmPointX) / _tmScale;
-      pinchCenter.y = ((e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top - _tmPointY) / _tmScale;
+      scaleAtPinchStart = _tmScale;
+      pinchCenter.x = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+      pinchCenter.y = (e.touches[0].clientY + e.touches[1].clientY) / 2;
     } else if (e.touches.length === 1) {
       start = { x: e.touches[0].clientX - _tmPointX, y: e.touches[0].clientY - _tmPointY };
       panning = true;
@@ -1000,12 +1022,12 @@ function initTestMap() {
       const dx = e.touches[0].clientX - e.touches[1].clientX;
       const dy = e.touches[0].clientY - e.touches[1].clientY;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      const newScale = Math.min(5, Math.max(1, (distance / initialDistance) * _tmScale));
-      const rect = wrap.getBoundingClientRect();
-      const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-      const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-      _tmPointX = centerX - rect.left - pinchCenter.x * newScale;
-      _tmPointY = centerY - rect.top - pinchCenter.y * newScale;
+      const newScale = Math.min(5, Math.max(1, (distance / initialDistance) * scaleAtPinchStart));
+      _tmPointX = pinchCenter.x - (pinchCenter.x - _tmPointX) * (newScale / _tmScale);
+      _tmPointY = pinchCenter.y - (pinchCenter.y - _tmPointY) * (newScale / _tmScale);
+
+
+
       _tmScale = newScale;
       wrap.style.transform = `translate(${_tmPointX}px, ${_tmPointY}px) scale(${_tmScale})`;
     } else if (e.touches.length === 1 && panning) {
