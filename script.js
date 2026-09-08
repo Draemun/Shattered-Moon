@@ -94,10 +94,11 @@ function linkifyKeywords(content) {
 function router() {
   const hash = location.hash.slice(1) || 'home'
   let content = pages[hash] || pages.home
+  if (typeof content === 'function') content = content()
   document.getElementById('app').innerHTML = content
   linkifyKeywords(document.getElementById('app'))
   updateIndicator(hash)
-  if (hash === 'maps') initMap()
+  if (hash === 'maps') { initMap(); initTestMap(); }
   document.dispatchEvent(new Event('routeRendered'))
   window.scrollTo(0, 0)
 }
