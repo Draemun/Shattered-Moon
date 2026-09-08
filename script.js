@@ -3,7 +3,6 @@ const pages = {
   lore: lorePage,
   timeline: timelinePage,
   maps: mapsPage,
-  'test-map': testMapPage,
   archives: archivesPage,
   'echo-miralen': echoMiralenPage,
   'echo-issue-21': echoIssue21Page,
@@ -92,10 +91,11 @@ function linkifyKeywords(content) {
 function router() {
   const hash = location.hash.slice(1) || 'home'
   let content = pages[hash] || pages.home
+  if (typeof content === 'function') content = content()
   document.getElementById('app').innerHTML = content
   linkifyKeywords(document.getElementById('app'))
   updateIndicator(hash)
-  if (hash === 'maps') initMap()
+  if (hash === 'maps') { initMap(); initTestMap(); }
   document.dispatchEvent(new Event('routeRendered'))
   window.scrollTo(0, 0)
 }
@@ -123,7 +123,6 @@ const pageIndex = {
   'lore': { title: 'Lore', content: lorePage },
   'timeline': { title: 'Timeline', content: timelinePage },
   'maps': { title: 'Maps', content: mapsPage },
-  'test-map': { title: 'Test Map', content: testMapPage },
   'archives': { title: 'Archives', content: archivesPage },
   'echo-miralen': { title: 'Echo of Miralen', content: echoMiralenPage },
   'echo-issue-21': { title: 'Issue #21 - Guild Factions', content: echoIssue21Page },

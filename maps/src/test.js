@@ -1,4 +1,4 @@
-function pt(x, y) { return { x, y }; }
+﻿function pt(x, y) { return { x, y }; }
 
 const ISLAND_MAIN = [
   pt(960, 724), pt(947, 728), pt(951, 740), pt(960, 753), pt(976, 755), pt(993, 752),
@@ -160,10 +160,10 @@ const STATIONS = [
   { x: 885,  y: 179,  name: 'Subsurface Station Xray' },
   { x: 259,  y: 347,  name: 'Subsurface Station Yanmega' },
   { x: 1274, y: 282,  name: 'Subsurface Station Natu' },
-  { x: 675,  y: 721,  name: 'Zorua Station' },
+  { x: 760,  y: 680,  name: 'Zorua Station' },
   { x: 1278, y: 601,  name: 'Mike Station' },
   { x: 1671, y: 540,  name: 'Golf Station' },
-  { x: 2016, y: 299,  name: 'Alfa Station' },
+  { x: 1950, y: 310,  name: 'Alfa Station' },
   { x: 2348, y: 179,  name: 'Subsurface Station Delta' },
   { x: 2409, y: 395,  name: 'Bravo Station' },
   { x: 2309, y: 601,  name: 'Charlie Station' },
@@ -173,7 +173,7 @@ const STATIONS = [
   { x: 2544, y: 1855, name: 'Subsurface Station Lima' },
   { x: 2000, y: 1868, name: 'Kilo Station' },
   { x: 1884, y: 1252, name: 'Illumise Station' },
-  { x: 1758, y: 1007, name: 'Hotel Station' },
+  { x: 1820, y: 1007, name: 'Hotel Station' },
   { x: 1162, y: 959,  name: 'Oscar Station' },
   { x: 1381, y: 1294, name: 'Papa Station' },
   { x: 1494, y: 1691, name: 'Subsurface Station Quaxly' },
@@ -578,6 +578,25 @@ const SETTLEMENT_D = [
   pt(2474, 1232), pt(2475, 1237), pt(2475, 1243), pt(2476, 1248),
 ];
 
+const LOCATIONS = [
+  { x: 2060, y: 296,  name: 'Last Haven' },
+  { x: 2342, y: 831,  name: 'Bridgetown' },
+  { x: 2561, y: 1090, name: 'Archway' },
+  { x: 2530, y: 1357, name: 'Void Sworn' },
+  { x: 2138, y: 1755, name: 'Keshari' },
+  { x: 1967, y: 880,  name: 'Virevale' },
+  { x: 1789, y: 1113, name: 'Phanteon' },
+  { x: 1541, y: 1205, name: 'Viewing Platform' },
+  { x: 1132, y: 1244, name: 'Veldenroot' },
+  { x: 1605, y: 421,  name: 'Grass that doesnt remember' },
+  { x: 1470, y: 1100, name: 'Netherscar' },
+  { x: 911,  y: 1480, name: 'Deep Caves' },
+  { x: 1278, y: 669,  name: 'Fracture Caves' },
+  { x: 701,  y: 1265, name: 'Lake of Memories' },
+  { x: 348,  y: 1259, name: 'Moonlight Wastes' },
+  { x: 679,  y: 727,  name: 'Glacien Hollow' },
+];
+
 const WAYSTONES = [
   pt(1162, 154), pt(833, 418), pt(562, 676), pt(285, 830), pt(595, 824),
   pt(366, 1046), pt(166, 1326), pt(169, 1504), pt(453, 1481), pt(562, 1436),
@@ -590,9 +609,117 @@ const WAYSTONES = [
   pt(1956, 446), pt(2129, 396), pt(2373, 474), pt(2339, 400), pt(2012, 265),
 ];
 
+const SETTLEMENTS_LIST = ['Last Haven', 'Veldenroot', 'Virevale', 'Keshari', 'Bridgetown', 'Archway'];
+
+const TEST_MAP_LORE = {
+  'Glacien Hollow': {
+    lore: '<p>A vast, wind-scoured basin buried deep in the northern reaches.</p><p>Once a thriving region, it\'s now locked in eternal frost and its history has been erased by a cataclysm no one remembers. The Hollow stretches endlessly, layered in fractured ice and veins of ancient permafrost. Ruins lie half-submerged, frozen mid-collapse as if time itself recoiled.</p><p>Some claim to see figures moving beneath the ice, slow and constantly watching.</p>'
+  },
+  'Moonlight Wastes': {
+    lore: '<p>Where Lunala and the Cresselias turned Faraway fell.</p><p>This flat, barren region exists in permanent twilight. The corrupted moon hangs frozen overhead, cycling through broken phases regardless of time.</p><p>Strange Lights float through the air, and the moonlight causes gradual insanity. The ground develops eye-like patterns. At the center lies Cresselia\'s Fall, a crater filled with disintegrating feathers and a corrupted Lunar Wing that induces hallucinations.</p><p>This place feels deeply wrong.</p>',
+    links: [{ title: 'Entity: Faraway', page: 'entity-faraway' }]
+  },
+  'Lake of Memories': {
+    lore: '<p>A vast lake that stretches farther than the eye can see. The water is unnaturally still. Pokemon who stare too long into the lake often lose track of time, or begin to recall things that aren\'t theirs.</p><p>Islands drift slowly across its surface, some hollow, some inhabited, some not existing at all. The lake is sacred to some, cursed to others, and impossible to fully map. No one has ever reached the far shore. Some say there isn\'t one.</p>'
+  },
+  'Veldenroot': {
+    lore: '<p>Built along the edge of a slow-spreading corruption zone, Veldenroot is a city of watchers and its residents specialize in anomaly tracking. The city itself is quiet as too much noise draws attention from things best left undisturbed.</p><p>Homes are built low to the ground, with thick walls and muted colors. Lanterns burn with filtered light. Its citizens speak in whispers, record what they see, and rarely intervene.</p><p>Independent \'mons now need 5 endorsements to enter this settlement, unless they live here.</p>',
+    links: [{ title: 'Echo of Miralen #27 - Splinter in Veldenroot', page: 'echo-issue-27' }]
+  },
+  'Deep Caves': {
+    lore: '<p>A sprawling underground network carved by corrupted entities during their hunts.</p><p>The corridors are impossibly long, lined with flickering torches and reversed carvings warning of Integrity. Void Echo deposits pulse behind ore veins. Echo chambers trap sound in infinite loops.</p><p>Who adventures too deep rarely comes back.</p>',
+    links: [{ title: 'Entity: The Alone', page: 'entity-alone' }]
+  },
+  'Fracture Caves': {
+    lore: '<p>Beneath the surface of the Corrupted Plains lies a cave system where reality itself fails to hold. Gravity reverses without warning, time loops in fragments, and navigation becomes a test of memory and will. The walls are embued with void energy, and echoes repeat endlessly, sometimes before you speak.</p><p>Pokemon who enter often lose track of how long they\'ve been inside...or whether they ever left. Those caverns are unstable, disorienting, and deeply tied to the corruption spreading through the Plains.</p>'
+  },
+  'Netherscar': {
+    lore: '<p>The scarred remains of Hoopa\'s portal network.</p><p>Though the portals are sealed, their energy leaked into the land, creating a permanent wound of magma and basalt. Bridges stretch over chasms, and the rocks are carved with warnings and betrayals.</p><p>Void Echoes cluster here more densely than anywhere else. It\'s unstable, hostile, and full of residual power.</p>'
+  },
+  'Viewing Platform': {
+    lore: '<p>A fenced cave opens into a staircase that descends toward a wide stone platform suspended above a Void pool.</p><p>From here, you can see a Torch Trail winding through the scar, and the jagged entrance to Eyes Corner where The Stalk appears most frequently. At the center of the platform, a carving reads <strong>"Is this fair?"</strong> etched in reverse, as if meant for something beneath. Pokemon who linger here report feeling watched, even when alone. Some say the platform was once used for ritual observation, others claim it was built by Integrity itself.</p><p>No one agrees on its purpose. Everyone agrees it\'s not safe to stay long.</p>'
+  },
+  'Grass that doesnt remember': {
+    lore: '<p>A field of grass that stretches across the northern edge of the Corrupted Plains. Pokemon who walk through it often forget why they came, what they were doing, or even who they are.</p><p>The terrain feels familiar and wrong all at once, like a memory you can\'t place. Voices sometimes whisper from the wind, and paths seem to rearrange themselves. This is quiet, eerie, and deceptively peaceful...<strong>until it isn\'t</strong>.</p>'
+  },
+  'Virevale': {
+    lore: '<p>A lakeside city built on bridges. It thrives on movements of goods, of stories and pokemon passing through.</p><p>It\'s a place of temporary stays and deals, where merchants, messengers, and mercenaries cross paths. Though it answers to the Last Haven, its loyalties shift like the tides. Locals say the lake remembers every secret ever spoken on its shores.</p>'
+  },
+  'Keshari': {
+    lore: '<p>Nestled in the fertile lowlands, Keshari is a quiet city known for its herbalists, growers, and caretakers. It supplies much of the region\'s food and medicine. Faraways are seen here more often than most places and are left offerings in return. Keshari obeys the Last Haven, but doesn\'t care about politics.</p>'
+  },
+  'Last Haven': {
+    lore: '<p>Once the headquarters of Team Voidseeker, Last Haven is now the heart of operation in the Shattered Territories. Built from stone, glass, and metal to resist void-corruption, its floors serve distinct purposes: the first floor underground hosts the commons, marketplace, and rental rooms; the second floor holds emergency supply vaults and watch balconies; the third is the communication and mission hub. The fourth floor is sealed and forbidden, where Sekani once listened to the corrupted soothe bell. At night, the ringing still echoes. The fifth floor remains empty.</p><p>Watchtowers guard the perimeter, and an underground tunnel system allows emergency evacuation. Patrols run constantly to monitor entity approach.</p>',
+    links: [{ title: 'Echo of Miralen #21 - Guild Factions', page: 'echo-issue-21' }]
+  },
+  'Bridgetown': {
+    lore: '<p>Built around the Archway\'s upper reaches, Bridgetown is a residential sprawl of suspended walkways, rope bridges, and cliffside dwellings. Pokemon live in elevated homes carved into rock faces or built atop reinforced platforms.</p><p>Communal gardens grow Enigma Berries in hanging baskets, as they are void-resistant. A small field known as the Windpatch serves as a gathering space, while the Echospire channels psychic energy to stabilize the area.</p><p>Bridgetown is divided into five districts:</p><p><strong>Burning Badlands</strong> -- in the southernmost edge, built from heat-treated basalt with Fire-types keeping lanterns lit year-round.</p><p><strong>Frozen Waterfalls</strong> -- where a cascade froze mid-fall and Water-types diverted channels through the ice.</p><p><strong>Mystic Forest</strong> -- hanging gardens and woven rope platforms where Grass-types coaxed plant life through the Archway\'s cracks.</p><p><strong>Silent Ruins</strong> -- built into the remains of a much older structure predating Archway itself, claimed by Ghost and Dark-types.</p><p><strong>Aetheria</strong> -- the highest point above the main rope network, where Dragon-types reside on outermost ledges and Flying-types serve as the informal courier network. Aetheria extends upward into a scatter of flying islands.</p>'
+  },
+  'Archway': {
+    lore: '<p>A towering arch spans the ravine, marking the heart of the Archway Settlement. This is the region\'s oldest surviving structure, now surrounded by elevated platforms, rope lifts, and cliffside stations. Guard posts are stationed at key elevation points and supply crates from Last Haven are dropped in during emergencies.</p><p>The central Archway serves as the main thoroughfare for trade and transit. A sealed tower nearby contains the original Void Echo discovered by Null, guarded at all times. Beneath the bridge, torch trails lead into forbidden caves marked with warnings.</p><p>The settlement is tense and always watching the depths below.</p>'
+  }
+};
+
+function openTestMapModal(name) {
+  const data = TEST_MAP_LORE[name];
+  if (!data) return;
+  document.getElementById('testMapModalTitle').textContent = name;
+  let body = data.lore;
+  if (data.links && data.links.length) {
+    body += '<div class="map-links">';
+    data.links.forEach(l => {
+      body += `<a href="#${l.page}" class="map-link-btn" onclick="closeTestMapModal(); setActive('${l.page}')">${l.title}</a>`;
+    });
+    body += '</div>';
+  }
+  document.getElementById('testMapModalBody').innerHTML = body;
+  document.getElementById('testMapModal').style.display = 'flex';
+}
+
+function closeTestMapModal() {
+  document.getElementById('testMapModal').style.display = 'none';
+}
+
+function renderSettlementMarkers() {
+  return LOCATIONS.filter(s => SETTLEMENTS_LIST.includes(s.name)).map(s => {
+    const r = 18;
+    const pts = [
+      [0, -r], [r * 0.22, -r * 0.31], [r * 0.95, -r * 0.31],
+      [r * 0.36, r * 0.12], [r * 0.59, r * 0.81],
+      [0, r * 0.38], [-r * 0.59, r * 0.81],
+      [-r * 0.36, r * 0.12], [-r * 0.95, -r * 0.31], [-r * 0.22, -r * 0.31]
+    ].map(([dx, dy]) => `${s.x + dx},${s.y + dy}`).join(' ');
+    const sdata = TEST_MAP_LORE[s.name] ? `data-lore="${s.name}"` : '';
+    const scursor = TEST_MAP_LORE[s.name] ? 'cursor:pointer; pointer-events:all;' : '';
+    return `
+      <g style="${scursor}" ${sdata}>
+    <polygon points="${pts}" fill="#facc15" opacity="0.95" stroke="#000000" stroke-width="1.5"/>
+    <text x="${s.x}" y="${s.y - 32}" text-anchor="middle" fill="white" stroke="white" stroke-width="1.5" font-size="24" font-weight="bold" font-family="Courier New" letter-spacing="0.5" paint-order="stroke">${s.name}</text>
+    <text x="${s.x}" y="${s.y - 32}" text-anchor="middle" fill="#000000" font-size="24" font-weight="bold" font-family="Courier New" letter-spacing="0.5">${s.name}</text>
+      </g>
+    `;
+  }).join('');
+}
+
+function renderPOIMarkers() {
+  return LOCATIONS.filter(s => !SETTLEMENTS_LIST.includes(s.name)).map(s => {
+    const pin = `M ${s.x} ${s.y + 22} C ${s.x - 6} ${s.y + 10} ${s.x - 16} ${s.y} ${s.x - 16} ${s.y - 10} A 16 16 0 1 1 ${s.x + 16} ${s.y - 10} C ${s.x + 16} ${s.y} ${s.x + 6} ${s.y + 10} ${s.x} ${s.y + 22} Z`;
+    const pdata = TEST_MAP_LORE[s.name] ? `data-lore="${s.name}"` : '';
+    const pcursor = TEST_MAP_LORE[s.name] ? 'cursor:pointer; pointer-events:all;' : '';
+    return `
+      <g style="${pcursor}" ${pdata}>
+    <path d="${pin}" fill="#4ade80" opacity="0.95" stroke="#000000" stroke-width="1.5"/>
+    <circle cx="${s.x}" cy="${s.y - 10}" r="6" fill="#1a1a2e" opacity="0.8"/>
+    <text x="${s.x}" y="${s.y - 32}" text-anchor="middle" fill="white" stroke="white" stroke-width="1.5" font-size="24" font-weight="bold" font-family="Courier New" letter-spacing="0.5" paint-order="stroke">${s.name}</text>
+    <text x="${s.x}" y="${s.y - 32}" text-anchor="middle" fill="#000000" font-size="24" font-weight="bold" font-family="Courier New" letter-spacing="0.5">${s.name}</text>
+      </g>
+    `;
+  }).join('');
+}
+
 function renderCorrupted() {
   return [CORRUPTED_A, CORRUPTED_B, CORRUPTED_C, CORRUPTED_D, CORRUPTED_E, CORRUPTED_F, CORRUPTED_G, CORRUPTED_H, ISLAND_WEST].map(poly => `
-    <polygon points="${polyToPoints(poly)}" fill="#4a1d6e" fill-opacity="0.45" stroke="#6b21a8" stroke-width="2" opacity="1"/>
+    <polygon points="${polyToPoints(poly)}" fill="#4a1d6e" fill-opacity="0.45" stroke="#6b21a8" stroke-width="1.5" opacity="1"/>
   `).join('');
 }
 
@@ -604,32 +731,27 @@ function renderSettlements() {
 
 function renderWaystones() {
   return WAYSTONES.map(s => `
-    <polygon points="${s.x},${s.y - 13} ${s.x + 13},${s.y} ${s.x},${s.y + 13} ${s.x - 13},${s.y}" fill="#06b6d4" opacity="0.9"/>
-    <polygon points="${s.x},${s.y - 22} ${s.x + 22},${s.y} ${s.x},${s.y + 22} ${s.x - 22},${s.y}" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+    <polygon points="${s.x},${s.y - 13} ${s.x + 13},${s.y} ${s.x},${s.y + 13} ${s.x - 13},${s.y}" fill="#06b6d4" opacity="0.9" stroke="#000000" stroke-width="1.5"/>
+    <polygon points="${s.x},${s.y - 22} ${s.x + 22},${s.y} ${s.x},${s.y + 22} ${s.x - 22},${s.y}" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"/>
   `).join('');
 }
 
 function renderStations() {
   return STATIONS.map(s => `
-    <polygon points="${s.x},${s.y - 14} ${s.x + 12},${s.y + 7} ${s.x - 12},${s.y + 7}" fill="#1e40af" opacity="0.9"/>
-    <text x="${s.x}" y="${s.y - 18}" text-anchor="middle" fill="#1e40af" font-size="22" font-weight="bold" font-family="Courier New" letter-spacing="0.5">${s.name}</text>
+    <polygon points="${s.x},${s.y - 14} ${s.x + 12},${s.y + 7} ${s.x - 12},${s.y + 7}" fill="#1e40af" opacity="0.9" stroke="#000000" stroke-width="1.5"/>
+    <text x="${s.x}" y="${s.y - 18}" text-anchor="middle" fill="white" stroke="white" stroke-width="1.5" font-size="22" font-weight="bold" font-family="Courier New" letter-spacing="0.5" paint-order="stroke">${s.name}</text>
+    <text x="${s.x}" y="${s.y - 18}" text-anchor="middle" fill="#000000" font-size="22" font-weight="bold" font-family="Courier New" letter-spacing="0.5">${s.name}</text>
   `).join('');
 }
 const IMG_W = 2752;
 const IMG_H = 2064;
 
-const testMapPage = `
-  <div class="container">
-    <h1 style="text-align: center; margin-bottom: 20px;">TEST MAP</h1>
-    <div class="map-container" style="overflow: auto;">
+function getMiralenMapContent() { return `
+  <div>
+    <div class="map-container" id="testMapContainer" style="overflow: hidden; cursor: grab;">
       <div style="position: relative; display: inline-block; width: 100%;">
         <img src="maps/png/test.png" alt="Test Map" class="map-image" style="display: block; width: 100%;">
         <svg viewBox="0 0 ${IMG_W} ${IMG_H}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
-          <g id="boundaries" visibility="visible">
-            <circle id="basecampDot" cx="0" cy="0" r="14" fill="#ef4444" opacity="0.9"/>
-            <circle id="basecampRing" cx="0" cy="0" r="24" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.5"/>
-            <text id="basecampLabel" x="0" y="0" text-anchor="middle" fill="#ef4444" font-size="28" font-weight="bold" font-family="Courier New" letter-spacing="1">BASECAMP ALPHA</text>
-          </g>
           <g id="corruptedLayer" visibility="visible">
             ${renderCorrupted()}
           </g>
@@ -642,17 +764,29 @@ const testMapPage = `
           <g id="waystonesLayer" visibility="visible">
             ${renderWaystones()}
           </g>
+          <g id="locationsLayer" visibility="visible">
+            ${renderSettlementMarkers()}
+          </g>
+          <g id="poisLayer" visibility="visible">
+            ${renderPOIMarkers()}
+          </g>
+          <g id="boundaries" visibility="visible">
+            <circle id="basecampDot" cx="0" cy="0" r="14" fill="#ef4444" opacity="0.9" stroke="#000000" stroke-width="1.5"/>
+            <circle id="basecampRing" cx="0" cy="0" r="24" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.5"/>
+            <text id="basecampLabelOutline" x="0" y="0" text-anchor="middle" fill="white" stroke="white" stroke-width="1.5" font-size="28" font-weight="bold" font-family="Courier New" letter-spacing="1" paint-order="stroke">BASECAMP ALPHA</text>
+            <text id="basecampLabel" x="0" y="0" text-anchor="middle" fill="#000000" font-size="28" font-weight="bold" font-family="Courier New" letter-spacing="1">BASECAMP ALPHA</text>
+          </g>
         </svg>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 20px; display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+    <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(3, auto); gap: 16px 30px; justify-content: center;">
       <label style="cursor: pointer; color: var(--text-secondary); font-family: 'Courier New', monospace; font-size: 0.85rem; letter-spacing: 1px;">
         <input type="checkbox" id="corruptedToggle" onchange="toggleCorrupted()" style="accent-color: #6b21a8; margin-right: 8px; width: 18px; height: 18px; vertical-align: middle;">
         SHOW CORRUPTED AREAS
       </label>
       <label style="cursor: pointer; color: var(--text-secondary); font-family: 'Courier New', monospace; font-size: 0.85rem; letter-spacing: 1px;">
         <input type="checkbox" id="settlementsToggle" onchange="toggleSettlements()" style="accent-color: #f97316; margin-right: 8px; width: 18px; height: 18px; vertical-align: middle;">
-        SHOW SETTLEMENTS
+        SHOW SETTLEMENT AREAS
       </label>
       <label style="cursor: pointer; color: var(--text-secondary); font-family: 'Courier New', monospace; font-size: 0.85rem; letter-spacing: 1px;">
         <input type="checkbox" id="basecampToggle" onchange="toggleBoundaries()" style="accent-color: #ef4444; margin-right: 8px; width: 18px; height: 18px; vertical-align: middle;">
@@ -666,9 +800,17 @@ const testMapPage = `
         <input type="checkbox" id="waystonesToggle" onchange="toggleWaystones()" style="accent-color: var(--accent-cyan); margin-right: 8px; width: 18px; height: 18px; vertical-align: middle;">
         SHOW WAYSTONES
       </label>
+      <label style="cursor: pointer; color: var(--text-secondary); font-family: 'Courier New', monospace; font-size: 0.85rem; letter-spacing: 1px;">
+        <input type="checkbox" id="locationsToggle" onchange="toggleLocations()" style="accent-color: #facc15; margin-right: 8px; width: 18px; height: 18px; vertical-align: middle;">
+        SHOW SETTLEMENTS
+      </label>
+      <label style="cursor: pointer; color: var(--text-secondary); font-family: 'Courier New', monospace; font-size: 0.85rem; letter-spacing: 1px;">
+        <input type="checkbox" id="poisToggle" onchange="togglePOIs()" style="accent-color: #4ade80; margin-right: 8px; width: 18px; height: 18px; vertical-align: middle;">
+        SHOW POINTS OF INTEREST
+      </label>
     </div>
   </div>
-`;
+`; }
 
 function toggleCorrupted() {
   const g = document.getElementById('corruptedLayer');
@@ -705,6 +847,20 @@ function toggleWaystones() {
   localStorage.setItem('waystonesVisible', checked ? 'true' : 'false');
 }
 
+function toggleLocations() {
+  const g = document.getElementById('locationsLayer');
+  const checked = event.target.checked;
+  g.setAttribute('visibility', checked ? 'visible' : 'hidden');
+  localStorage.setItem('locationsVisible', checked ? 'true' : 'false');
+}
+
+function togglePOIs() {
+  const g = document.getElementById('poisLayer');
+  const checked = event.target.checked;
+  g.setAttribute('visibility', checked ? 'visible' : 'hidden');
+  localStorage.setItem('poisVisible', checked ? 'true' : 'false');
+}
+
 document.addEventListener('routeRendered', () => {
   const cl = document.getElementById('corruptedToggle');
   const savedCl = localStorage.getItem('corruptedVisible');
@@ -732,6 +888,8 @@ document.addEventListener('routeRendered', () => {
   document.getElementById('basecampDot').setAttribute('cy', bp.y.toFixed(1));
   document.getElementById('basecampRing').setAttribute('cx', bp.x.toFixed(1));
   document.getElementById('basecampRing').setAttribute('cy', bp.y.toFixed(1));
+  document.getElementById('basecampLabelOutline').setAttribute('x', bp.x.toFixed(1));
+  document.getElementById('basecampLabelOutline').setAttribute('y', (bp.y - 30).toFixed(1));
   document.getElementById('basecampLabel').setAttribute('x', bp.x.toFixed(1));
   document.getElementById('basecampLabel').setAttribute('y', (bp.y - 30).toFixed(1));
   const savedCamp = localStorage.getItem('basecampAlpha');
@@ -750,4 +908,117 @@ document.addEventListener('routeRendered', () => {
   const showWt = savedWt === null ? true : savedWt === 'true';
   wt.checked = showWt;
   document.getElementById('waystonesLayer').setAttribute('visibility', showWt ? 'visible' : 'hidden');
+
+  const lt = document.getElementById('locationsToggle');
+  const savedLt = localStorage.getItem('locationsVisible');
+  const showLt = savedLt === null ? true : savedLt === 'true';
+  lt.checked = showLt;
+  document.getElementById('locationsLayer').setAttribute('visibility', showLt ? 'visible' : 'hidden');
+
+  const pt = document.getElementById('poisToggle');
+  const savedPt = localStorage.getItem('poisVisible');
+  const showPt = savedPt === null ? true : savedPt === 'true';
+  pt.checked = showPt;
+  document.getElementById('poisLayer').setAttribute('visibility', showPt ? 'visible' : 'hidden');
+
+  document.querySelectorAll('#locationsLayer [data-lore], #poisLayer [data-lore]').forEach(el => {
+    el.style.pointerEvents = 'all';
+    el.style.cursor = 'pointer';
+    el.addEventListener('click', () => openTestMapModal(el.getAttribute('data-lore')));
+  });
+
+  initTestMap();
 });
+
+let _tmScale = 1, _tmPointX = 0, _tmPointY = 0;
+
+function testMapZoom(delta) {
+  const wrap = document.querySelector('#testMapContainer > div');
+  if (!wrap) return;
+  _tmScale = Math.min(5, Math.max(1, _tmScale + delta));
+  wrap.style.transform = `translate(${_tmPointX}px, ${_tmPointY}px) scale(${_tmScale})`;
+}
+
+function testMapResetZoom() {
+  const wrap = document.querySelector('#testMapContainer > div');
+  if (!wrap) return;
+  _tmScale = 1; _tmPointX = 0; _tmPointY = 0;
+  wrap.style.transform = `translate(0px, 0px) scale(1)`;
+}
+
+function initTestMap() {
+  _tmScale = 1; _tmPointX = 0; _tmPointY = 0;
+  const wrap = document.querySelector('#testMapContainer > div');
+  if (!wrap) return;
+
+  wrap.style.transformOrigin = '0 0';
+
+  let panning = false;
+  let start = { x: 0, y: 0 };
+  let initialDistance = 0;
+  let pinchCenter = { x: 0, y: 0 };
+
+  const container = document.getElementById('testMapContainer');
+  container.addEventListener('mousedown', (e) => {
+    panning = true;
+    start = { x: e.clientX - _tmPointX, y: e.clientY - _tmPointY };
+    container.style.cursor = 'grabbing';
+  });
+  container.addEventListener('mousemove', (e) => {
+    if (!panning) return;
+    _tmPointX = e.clientX - start.x;
+    _tmPointY = e.clientY - start.y;
+    wrap.style.transform = `translate(${_tmPointX}px, ${_tmPointY}px) scale(${_tmScale})`;
+  });
+  container.addEventListener('mouseup', () => {
+    panning = false;
+    container.style.cursor = 'grab';
+  });
+  container.addEventListener('mouseleave', () => {
+    panning = false;
+    container.style.cursor = 'grab';
+  });
+
+  wrap.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      initialDistance = Math.sqrt(dx * dx + dy * dy);
+      const rect = wrap.getBoundingClientRect();
+      pinchCenter.x = ((e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left - _tmPointX) / _tmScale;
+      pinchCenter.y = ((e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top - _tmPointY) / _tmScale;
+    } else if (e.touches.length === 1) {
+      start = { x: e.touches[0].clientX - _tmPointX, y: e.touches[0].clientY - _tmPointY };
+      panning = true;
+    }
+  });
+
+  wrap.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      const newScale = Math.min(5, Math.max(1, (distance / initialDistance) * _tmScale));
+      const rect = wrap.getBoundingClientRect();
+      const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+      const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      _tmPointX = centerX - rect.left - pinchCenter.x * newScale;
+      _tmPointY = centerY - rect.top - pinchCenter.y * newScale;
+      _tmScale = newScale;
+      wrap.style.transform = `translate(${_tmPointX}px, ${_tmPointY}px) scale(${_tmScale})`;
+    } else if (e.touches.length === 1 && panning) {
+      e.preventDefault();
+      _tmPointX = e.touches[0].clientX - start.x;
+      _tmPointY = e.touches[0].clientY - start.y;
+      wrap.style.transform = `translate(${_tmPointX}px, ${_tmPointY}px) scale(${_tmScale})`;
+    }
+  });
+
+  wrap.addEventListener('touchend', (e) => {
+    if (e.touches.length < 2) initialDistance = 0;
+    if (e.touches.length === 0) panning = false;
+  });
+}
+

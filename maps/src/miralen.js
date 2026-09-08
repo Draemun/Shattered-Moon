@@ -1,11 +1,18 @@
-const mapsPage = `
+function mapsPage() { return `
   <div class="container">
-    <h1 style="text-align: center; margin-bottom: 40px;">MIRALEN</h1>
-    <div class="map-container">
-      <img src="maps/png/miralen.png" alt="Miralen" class="map-image" id="mapImg">
+    <h1 style="text-align: center; margin-bottom: 24px;">MAPS</h1>
+    <div style="display:flex; justify-content:center; gap:12px; margin-bottom:32px;">
+      <button onclick="showMap('miralen')" id="mapPillMiralen" style="background:var(--accent-purple); border:none; color:white; font-family:'Courier New',monospace; font-size:0.85rem; letter-spacing:2px; padding:10px 28px; border-radius:50px; cursor:pointer; box-shadow:0 0 15px var(--glow-purple); transition:all 0.3s;">MIRALEN</button>
+      <button onclick="showMap('legacy')" id="mapPillLegacy" style="background:var(--bg-secondary); border:1px solid var(--accent-purple); color:var(--text-secondary); font-family:'Courier New',monospace; font-size:0.85rem; letter-spacing:2px; padding:10px 28px; border-radius:50px; cursor:pointer; transition:all 0.3s;">LEGACY</button>
+    </div>
+    <div id="mapViewMiralen">${getMiralenMapContent()}</div>
+    <div id="mapViewLegacy" style="display:none;">
+      <div class="map-container">
+        <img src="maps/png/miralen_legacy.png" alt="Miralen Legacy" class="map-image" id="mapImg">
+      </div>
     </div>
   </div>
-  
+
   <div id="mapModal" class="map-modal">
     <div class="map-modal-content">
       <span class="map-modal-close" onclick="closeMapModal()">&times;</span>
@@ -13,7 +20,26 @@ const mapsPage = `
       <div id="modalBody"></div>
     </div>
   </div>
-`
+
+  <div id="testMapModal" class="map-modal" onclick="if(event.target===this)closeTestMapModal()">
+    <div class="map-modal-content">
+      <span class="map-modal-close" onclick="closeTestMapModal()">&times;</span>
+      <h2 id="testMapModalTitle"></h2>
+      <div id="testMapModalBody"></div>
+    </div>
+  </div>
+`; }
+
+function showMap(which) {
+  document.getElementById('mapViewMiralen').style.display = which === 'miralen' ? '' : 'none';
+  document.getElementById('mapViewLegacy').style.display = which === 'legacy' ? '' : 'none';
+  const active = 'background:var(--accent-purple); border:none; color:white; font-family:\'Courier New\',monospace; font-size:0.85rem; letter-spacing:2px; padding:10px 28px; border-radius:50px; cursor:pointer; box-shadow:0 0 15px var(--glow-purple); transition:all 0.3s;';
+  const inactive = 'background:var(--bg-secondary); border:1px solid var(--accent-purple); color:var(--text-secondary); font-family:\'Courier New\',monospace; font-size:0.85rem; letter-spacing:2px; padding:10px 28px; border-radius:50px; cursor:pointer; transition:all 0.3s;';
+  document.getElementById('mapPillMiralen').style.cssText = which === 'miralen' ? active : inactive;
+  document.getElementById('mapPillLegacy').style.cssText = which === 'legacy' ? active : inactive;
+  if (which === 'legacy') initMap();
+  if (which === 'miralen') initTestMap();
+}
 
 const mapLocations = {
   'Glacien Hollow': { 
