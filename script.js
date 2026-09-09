@@ -163,49 +163,50 @@ const pageIndex = {
   'combat': { title: 'Combat', content: combatPage }
 }
 
+function getPlainText(html) {
+  const d = document.createElement('div')
+  d.innerHTML = html
+  d.querySelectorAll('script, style').forEach(el => el.remove())
+  return (d.textContent || d.innerText || '').replace(/\s+/g, ' ').trim()
+}
+
 function handleSearch(event) {
   const query = event.target.value.toLowerCase().trim()
   const resultsDiv = document.getElementById('searchResults')
-  
+
   if (!query) {
     resultsDiv.style.display = 'none'
     return
   }
-  
+
   const matches = []
   const seen = new Set()
-  
+
   Object.keys(pageIndex).forEach(pageKey => {
     const page = pageIndex[pageKey]
-    const rawContent = typeof page.content === 'function' ? page.content() : page.content;
-    const contentLower = rawContent.toLowerCase()
+    const rawContent = typeof page.content === 'function' ? page.content() : page.content
+    const plainText = getPlainText(rawContent)
+    const plainLower = plainText.toLowerCase()
 
-    
-    if (contentLower.includes(query) && !seen.has(pageKey)) {
-      const index = contentLower.indexOf(query)
-      const start = Math.max(0, index - 50)
-      const end = Math.min(rawContent.length, index + query.length + 50)
-      let snippet = rawContent.substring(start, end).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
-
+    if (plainLower.includes(query) && !seen.has(pageKey)) {
+      const index = plainLower.indexOf(query)
+      const start = Math.max(0, index - 60)
+      const end = Math.min(plainText.length, index + query.length + 60)
+      let snippet = plainText.substring(start, end).replace(/\s+/g, ' ').trim()
       if (start > 0) snippet = '...' + snippet
-      if (end < page.content.length) snippet = snippet + '...'
-      
-      const occurrences = (contentLower.match(new RegExp(query, 'g')) || []).length
-      
-      matches.push({ 
-        key: pageKey, 
-        title: page.title, 
-        snippet: snippet,
-        count: occurrences
-      })
+      if (end < plainText.length) snippet = snippet + '...'
+
+      const occurrences = (plainLower.match(new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length
+
+      matches.push({ key: pageKey, title: page.title, snippet, count: occurrences })
       seen.add(pageKey)
     }
   })
-  
+
   matches.sort((a, b) => b.count - a.count)
-  
+
   if (matches.length > 0) {
-    resultsDiv.innerHTML = matches.map(match => 
+    resultsDiv.innerHTML = matches.map(match =>
       `<div class="search-result-item" onclick="navigateToPage('${match.key}', '${query}')">
         <div class="search-result-title">${match.title} <span class="search-count">(${match.count})</span></div>
         <div class="search-result-snippet">${match.snippet}</div>
@@ -237,36 +238,33 @@ function navigateToPage(page, query = '') {
 
 function highlightAndScroll(query) {
   const app = document.getElementById('app')
-  const walker = document.createTreeWalker(app, NodeFilter.SHOW_TEXT, null, false)
-  let node
-  let firstMatch = null
-  
-  while (node = walker.nextNode()) {
-    if (node.nodeValue.toLowerCase().includes(query.toLowerCase())) {
-      const parent = node.parentNode
-      const text = node.nodeValue
-      const regex = new RegExp(`(${query})`, 'gi')
-      const highlighted = text.replace(regex, '<mark style="background: var(--accent-purple); color: white; padding: 2px 4px; border-radius: 3px;">$1</mark>')
-      const span = document.createElement('span')
-      span.innerHTML = highlighted
-      parent.replaceChild(span, node)
-      
-      if (!firstMatch) {
-        firstMatch = span
-      }
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const regex = new RegExp(`(${escaped})`, 'gi')
+  const walker = document.createTreeWalker(app, NodeFilter.SHOW_TEXT, {
+    acceptNode: node => {
+      const tag = node.parentNode && node.parentNode.tagName
+      if (tag === 'SCRIPT' || tag === 'STYLE') return NodeFilter.FILTER_REJECT
+      return NodeFilter.FILTER_ACCEPT
     }
-  }
-  
+  })
+  const nodes = []
+  let node
+  while (node = walker.nextNode()) nodes.push(node)
+
+  let firstMatch = null
+  nodes.forEach(node => {
+    if (!node.nodeValue.toLowerCase().includes(query.toLowerCase())) return
+    const span = document.createElement('span')
+    span.innerHTML = node.nodeValue.replace(regex, '<mark style="background: var(--accent-purple); color: white; padding: 2px 4px; border-radius: 3px;">$1</mark>')
+    node.parentNode.replaceChild(span, node)
+    if (!firstMatch) firstMatch = span
+  })
+
   if (firstMatch) {
-    const rect = firstMatch.getBoundingClientRect()
-    const scrollTop = window.pageYOffset + rect.top - 150
+    const scrollTop = window.pageYOffset + firstMatch.getBoundingClientRect().top - 150
     window.scrollTo({ top: scrollTop, behavior: 'smooth' })
-    
     setTimeout(() => {
-      document.querySelectorAll('mark').forEach(mark => {
-        const text = mark.textContent
-        mark.replaceWith(text)
-      })
+      document.querySelectorAll('mark').forEach(mark => mark.replaceWith(mark.textContent))
     }, 1500)
   }
 }
