@@ -177,14 +177,16 @@ function handleSearch(event) {
   
   Object.keys(pageIndex).forEach(pageKey => {
     const page = pageIndex[pageKey]
-    const contentLower = page.content.toLowerCase()
+    const rawContent = typeof page.content === 'function' ? page.content() : page.content;
+    const contentLower = rawContent.toLowerCase()
+
     
     if (contentLower.includes(query) && !seen.has(pageKey)) {
       const index = contentLower.indexOf(query)
       const start = Math.max(0, index - 50)
-      const end = Math.min(page.content.length, index + query.length + 50)
-      let snippet = page.content.substring(start, end).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
-      
+      const end = Math.min(rawContent.length, index + query.length + 50)
+      let snippet = rawContent.substring(start, end).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
+
       if (start > 0) snippet = '...' + snippet
       if (end < page.content.length) snippet = snippet + '...'
       
