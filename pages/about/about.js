@@ -83,6 +83,7 @@ const rpRulesPage = `
         <li>Overly perfect characters</li>
         <li>Overpowered or god-modding characters</li>
         <li>Legendaries appearing in backstories without staff permission</li>
+        <li>Child soldiers (Have any young character be at least be 16, if you want to join missions and events. Otherwise, have the character be acompanied by an adult and they will be bound to a settlement.)</li>
       </ul>
     </section>
 
