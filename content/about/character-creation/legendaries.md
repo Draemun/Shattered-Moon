@@ -51,7 +51,7 @@ He wants to break them and corrupt them to prove that even perfection can be des
 | Cobalion [Cypher] | The Interceptor | Intact / Protective |
 | Black Kyurem [Kyurem] | Ideal Ambassador | Intact / Protective |
 | Zygarde [Vortex] | The Collective | Intact / Protective |
-| Gouging Fire [Echo] | The Smith | Intact / Protective|
+| Gouging Fire [Echo] | The Smith | Intact / Neutral|
 | Wo-Chien [Echo] | / | MIA - Unknown |
 
 # AVAILABLE LEGENDARIES
