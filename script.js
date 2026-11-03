@@ -93,10 +93,10 @@ function linkifyKeywords(content) {
   return tempDiv.innerHTML
 }
 
-function router() {
+async function router() {
   const hash = location.hash.slice(1) || 'home'
   let content = pages[hash] || pages.home
-  if (typeof content === 'function') content = content()
+  if (typeof content === 'function') content = await content()
   document.getElementById('app').innerHTML = content
   linkifyKeywords(document.getElementById('app'))
   updateIndicator(hash)
@@ -174,7 +174,7 @@ function getPlainText(html) {
   return (d.textContent || d.innerText || '').replace(/\s+/g, ' ').trim()
 }
 
-function handleSearch(event) {
+async function handleSearch(event) {
   const query = event.target.value.toLowerCase().trim()
   const resultsDiv = document.getElementById('searchResults')
 
@@ -186,9 +186,9 @@ function handleSearch(event) {
   const matches = []
   const seen = new Set()
 
-  Object.keys(pageIndex).forEach(pageKey => {
+  for (const pageKey of Object.keys(pageIndex)) {
     const page = pageIndex[pageKey]
-    const rawContent = typeof page.content === 'function' ? page.content() : page.content
+    let rawContent = typeof page.content === 'function' ? await page.content() : page.content
     const plainText = getPlainText(rawContent)
     const plainLower = plainText.toLowerCase()
 
@@ -205,7 +205,7 @@ function handleSearch(event) {
       matches.push({ key: pageKey, title: page.title, snippet, count: occurrences })
       seen.add(pageKey)
     }
-  })
+  }
 
   matches.sort((a, b) => b.count - a.count)
 

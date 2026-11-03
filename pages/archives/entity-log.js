@@ -242,6 +242,7 @@ const entityNoMonsPage = `
           <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">A (Elevated Threat)</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span class="val-extreme">High</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
+          <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Restricted / Guild Access Required</span></div>
         </div>
 
         <div class="terminal-section-label">ANOMALOUS PROPERTIES</div>
@@ -273,6 +274,7 @@ const entityAmbushPage = `
           <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-extreme">S+ (Extreme Threat)</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span>None</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
+          <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Public Record</span></div>
         </div>
 
         <div class="terminal-section-label">ANOMALOUS PROPERTIES</div>
@@ -306,6 +308,7 @@ const entityTheLibraryPage = `
           <div class="terminal-meta-row"><span class="key">THREAT</span><span class="val-passive">D (Minimal to No Threat)</span></div>
           <div class="terminal-meta-row"><span class="key">ANGER</span><span>None</span></div>
           <div class="terminal-meta-row"><span class="key">SOURCE</span><span>Avira's Entity Logs</span></div>
+          <div class="terminal-meta-row"><span class="key">CLEARANCE</span><span>Public Record</span></div>
         </div>
 
         <div class="terminal-section-label">ANOMALOUS PROPERTIES</div>

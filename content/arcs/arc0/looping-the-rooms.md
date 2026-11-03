@@ -1,0 +1,1 @@
+During Palkia's onslaught against Last Haven, Luxrith, David, and Uriel find themselves within an empty mall with a few others. Teaming up with Team Pine Nuts (Mint & Safna), they slowly navigate their way rescuing a Stonjourner and Herdier. They come across a Carnvivine entity lurking within and escape.
