@@ -30,7 +30,7 @@ He wants to break them and corrupt them to prove that even perfection can be des
 | Yveltal [Staff NPC] | End Enforcer | Splintered / Hostile |
 | Hoopa Unbound [Staff NPC] | The Shattered | Splintered / Hostile |
 | Dawn Wing Necrozma [Staff NPC] | The Fallen | Splintered / Hostile |
-| Chien-Pao [Staff NPC] | The Last Edge | Unknown |
+| Chien-Pao [Staff NPC] | The Last Edge | MIA - Unknown |
 | Mew [Staff NPC] | The Helper | Intact / Protective |
 | Mewtwo [Staff NPC] | The Instructor | Intact / Neutral |
 | Koraidon [Staff NPC] | The Burned | Unknown |
@@ -52,7 +52,7 @@ He wants to break them and corrupt them to prove that even perfection can be des
 | Black Kyurem [Kyurem] | Ideal Ambassador | Intact / Protective |
 | Zygarde [Vortex] | The Collective | Intact / Protective |
 | Gouging Fire [Echo] | The Smith | Intact / Protective|
-| Wo-Chien [Echo] | / | Unknown |
+| Wo-Chien [Echo] | / | MIA - Unknown |
 
 # AVAILABLE LEGENDARIES
 
