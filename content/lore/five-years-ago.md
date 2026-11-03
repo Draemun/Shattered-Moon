@@ -36,4 +36,4 @@ Blackout ventured deep into a cave one day, following some voices asking for hel
 Kyria was the last of the first to vanish.
 She experienced the **Moon Glitch**, a phenomenon where Arceus's corruption manifested physically in the world. One night, the moon itself seemed to crack and bleed void-energy across the sky. 
 *That same night, Integrity materialized in Kyria's home; she tried to run and to fight...But you cannot fight the fundamental breakdown of existence.* 
-Records become unclear here. Some survivors claim they saw Kyria flee somehow, others say she became something else entirely.
+Records become unclear here. Some survivors claim they saw Kyria flee somehow,thers say she became something else entirely.
