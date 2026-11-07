@@ -74,6 +74,20 @@ Dark-ness shan't flow though-out His course"
 
 ---
 
+*Of course, not all is what it seems.* The religion prides itself on looks, especially to outsiders. Those in charge manipulate the congregation in any way they can to keep the masses dormant.
+
+The **Relic**, said to be an artifact from Arceus himself, is a dupe. The one used in ceremony is expertly carved from a **Fire Gem**, looking near indistinguishable from the real Relic.
+The real Relic is used to subdue **Koraidon**. In reality, it is a fragment of the **Red Chain**; those who touch the chain unprotected have their energy sapped away, risking killing them. Koraidon's awareness has been fragmented and dulled due to the Chain. As long as strong light is available, Koraidon generates energy passively. The cult keeps a constant stream of sunlight through the use of sunny day and reflection to the chamber where Koraidon is kept. The energy Koraidon produces is siphoned and used to sustain Voidsworn infrastructure.
+
+*There are no existing records of Koraidon's capture.* Whether they've been lost or deliberately destroyed is up for debate, but no one has the power nor suspicion to investigate the Voidsworn.
+
+Only the leader, **Wilfred**, and his second in command, **Pecharunt**, know this truth. *A third knows about the Red Chain, but he knows better than to speak out about it.*
+
+Splintered souls who aren't violent are treated as royalty in the community, but not all splintering goes well. Many are left violent. These mons end up kidnapped, thrown into an elaborate underground dungeon of sorts.
+*Those without memories can be taught His will. Those who choose to fight simply need reeducated.* It's a simple system, one that the Voidsworn has found to work quite well.
+
+---
+
 The compound is split into a strict hierarchy. *Respect to your superiors is taken seriously, even if they may be younger or less experienced.*
 
 The **Mayworth** family is at the top of that totem pole; **Wilfred** runs the compound while his two daughters are treated like royalty. His heir will return to the religion, one way or another. Bloodshed or not.
