@@ -1,5 +1,6 @@
 const splintersPage = `
   <div class="container">
+    <div class="arc-back"><a href="#character-creation" onclick="setActive('character-creation')">← Back to Character Creation</a></div>
     <section class="lore-content-section">
       <h1>SOUL SPLINTERS</h1>
       <p>When the Void's Corruption hits a Pokémon, it fractures their soul and these fragments become Soul Splinters, manifestations of twisted consciousness that often (but not always) serve Arceus's will. The resulting corruption manifests in different forms depending on the strength of the corrupting force and how much of the victim's consciousness survives the splintering process.</p>

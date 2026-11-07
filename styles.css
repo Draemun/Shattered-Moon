@@ -1989,12 +1989,33 @@ footer p {
     color: var(--text-secondary);
 }
 
+.lore-content-section hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 30px 0;
+}
+
 .lore-content-section blockquote {
     border-left: 3px solid var(--accent-purple);
     padding: 8px 16px;
     margin: 16px 0;
     color: var(--text-primary);
     background: rgba(139, 92, 246, 0.05);
+}
+
+.lore-quote {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 600px;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.lore-quote-attr {
+    text-align: right;
+    font-style: normal;
+    margin-top: 8px;
 }
 
 .lore-content-section strong {
@@ -2044,7 +2065,76 @@ footer p {
     white-space: pre-wrap;
 }
 
-.arc-index {
+.faction-group {
+    margin-bottom: 40px;
+}
+
+.faction-group-label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-purple);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.faction-group-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.faction-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: border-color 0.2s, background 0.2s;
+    background: var(--bg-secondary);
+}
+
+.faction-row:hover {
+    border-color: var(--accent-purple);
+    background: var(--bg-tertiary);
+}
+
+.faction-row-tag {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    min-width: 200px;
+}
+
+.faction-row-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.faction-row:hover .faction-row-name {
+    color: var(--accent-purple);
+}
+
+.faction-row-arrow {
+    color: var(--accent-purple);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .faction-row-tag {
+        display: none;
+    }
+}
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
