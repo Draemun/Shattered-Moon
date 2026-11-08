@@ -98,3 +98,4 @@ He wants to break them and corrupt them to prove that even perfection can be des
 - Zygarde cannot megaevolve and therefore, they cannot learn the PLZA signature move.
 - Kyurem and Necrozma Variants are different Pokémon.
 - Spectrier and Galastrier maintain their abilities. Cooperating with Calyrex grants them the signature move.
+- Legendaries can get in a custom ultradimension called Forbidden Glade, accessible only to them. It's...surprisingly safe.
