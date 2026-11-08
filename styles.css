@@ -1493,7 +1493,7 @@ footer p {
 }
 
 .masthead {
-    border-top: 3px solid var(--accent-purple);
+    border-top: 5px solid var(--accent-purple);
     border-bottom: 0.5px solid var(--accent-purple);
     padding: 0.6rem 0 0.5rem;
     margin-bottom: 0.3rem;
@@ -1502,6 +1502,7 @@ footer p {
     align-items: baseline;
     flex-wrap: wrap;
     gap: 4px;
+    box-shadow: 0 -4px 18px var(--glow-purple);
 }
 
 .masthead-title {

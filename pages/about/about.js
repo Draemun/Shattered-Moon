@@ -1,11 +1,14 @@
 const aboutPage = `
   <div class="container">
-    <div class="category-grid">
-      <a href="#roleplay" onclick="setActive('roleplay')" class="category-card">
-        <h2>Roleplay</h2>
+    <div class="faction-group">
+      <div class="faction-group-label">About</div>
+      <a href="#roleplay" onclick="setActive('roleplay')" class="faction-row">
+        <span class="faction-row-name">Roleplay</span>
+        <span class="faction-row-arrow">›</span>
       </a>
-      <a href="#character-creation" onclick="setActive('character-creation')" class="category-card">
-        <h2>Character Creation</h2>
+      <a href="#character-creation" onclick="setActive('character-creation')" class="faction-row">
+        <span class="faction-row-name">Character Creation</span>
+        <span class="faction-row-arrow">›</span>
       </a>
     </div>
   </div>

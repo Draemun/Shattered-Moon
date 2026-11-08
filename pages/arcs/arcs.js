@@ -1,12 +1,11 @@
 const arcsPage = `
   <div class="container">
-    <section class="lore-content-section">
-      <h1>ARCS &amp; EVENTS</h1>
-      <div class="arc-index">
-        <a href="#arc0" onclick="setActive('arc0')" class="arc-index-card">
-          <div class="arc-index-title">Arc 0 - The Moonglitch</div>
-        </a>
-      </div>
-    </section>
+    <div class="faction-group">
+      <div class="faction-group-label">Arcs &amp; Events</div>
+      <a href="#arc0" onclick="setActive('arc0')" class="faction-row">
+        <span class="faction-row-name">Arc 0 - The Moonglitch</span>
+        <span class="faction-row-arrow">›</span>
+      </a>
+    </div>
   </div>
 `
