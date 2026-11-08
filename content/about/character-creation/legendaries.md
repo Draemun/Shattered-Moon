@@ -32,7 +32,6 @@ He wants to break them and corrupt them to prove that even perfection can be des
 | Dawn Wing Necrozma [Staff NPC] | The Fallen | Splintered / Hostile |
 | Chien-Pao [Staff NPC] | The Last Edge | MIA - Unknown |
 | Mew [Staff NPC] | The Helper | Intact / Protective |
-| Mewtwo [Staff NPC] | The Instructor | Intact / Neutral |
 | Koraidon [Staff NPC] | The Burned | Unknown |
 | Celebi [Staff NPC] | The Legend | Unknown |
 
@@ -53,6 +52,7 @@ He wants to break them and corrupt them to prove that even perfection can be des
 | Zygarde [Vortex] | The Collective | Intact / Protective |
 | Gouging Fire [Echo] | The Smith | Intact / Neutral|
 | Wo-Chien [Echo] | / | MIA - Unknown |
+| Mewtwo [Aether] | The Instructor | Intact / Neutral |
 
 # AVAILABLE LEGENDARIES
 
