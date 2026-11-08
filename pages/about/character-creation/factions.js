@@ -12,32 +12,32 @@ function factionsPage() {
       </a>
       <a href="#faction-wardens" onclick="setActive('faction-wardens')" class="faction-row">
         <span class="faction-row-tag">Defense & Security</span>
-        <span class="faction-row-name">The Wardens</span>
+        <span class="faction-row-name">Wardens</span>
         <span class="faction-row-arrow">›</span>
       </a>
       <a href="#faction-chroniclers" onclick="setActive('faction-chroniclers')" class="faction-row">
         <span class="faction-row-tag">Documentation & Archives</span>
-        <span class="faction-row-name">The Chroniclers</span>
+        <span class="faction-row-name">Chroniclers</span>
         <span class="faction-row-arrow">›</span>
       </a>
       <a href="#faction-scouts" onclick="setActive('faction-scouts')" class="faction-row">
         <span class="faction-row-tag">Reconnaissance & Supply</span>
-        <span class="faction-row-name">The Scouts</span>
+        <span class="faction-row-name">Scouts</span>
         <span class="faction-row-arrow">›</span>
       </a>
       <a href="#faction-builders" onclick="setActive('faction-builders')" class="faction-row">
         <span class="faction-row-tag">Construction & Infrastructure</span>
-        <span class="faction-row-name">The Builders</span>
+        <span class="faction-row-name">Builders</span>
         <span class="faction-row-arrow">›</span>
       </a>
       <a href="#faction-providers" onclick="setActive('faction-providers')" class="faction-row">
         <span class="faction-row-tag">Resources & Healing</span>
-        <span class="faction-row-name">The Providers</span>
+        <span class="faction-row-name">Providers</span>
         <span class="faction-row-arrow">›</span>
       </a>
       <a href="#faction-void-hunters" onclick="setActive('faction-void-hunters')" class="faction-row">
         <span class="faction-row-tag">Offence & Entity Handling</span>
-        <span class="faction-row-name">The Void Hunters</span>
+        <span class="faction-row-name">Void Hunters</span>
         <span class="faction-row-arrow">›</span>
       </a>
     </div>
