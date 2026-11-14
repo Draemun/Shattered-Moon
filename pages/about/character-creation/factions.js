@@ -110,6 +110,30 @@ async function factionTheLostPage() {
 }
 
 async function factionVoidswornPage() {
-  const content = await loadMd('content/about/character-creation/factions/voidsworn.md')
-  return `<div class="container"><div class="arc-back"><a href="#factions" onclick="setActive('factions')">← Back to Factions</a></div><section class="lore-content-section">${content}</section></div>`
+  const [main, elunis] = await Promise.all([
+    loadMd('content/about/character-creation/factions/voidsworn-main.md'),
+    loadMd('content/about/character-creation/factions/order-of-elunis.md')
+  ])
+
+  const titles = ['The Voidsworn', 'The Order of Elunis']
+  const bodies = [main, elunis]
+
+  return `
+  <div class="container">
+    <div class="arc-back"><a href="#factions" onclick="setActive('factions')">← Back to Factions</a></div>
+    <div class="arc-threads">
+      ${titles.map((title, i) => `
+        <div class="arc-thread">
+          <button class="arc-thread-btn" data-index="${i}" aria-expanded="false">
+            <span>${title}</span>
+            <span class="arc-thread-arrow">&#9660;</span>
+          </button>
+          <div class="arc-thread-body" id="voidsworn-thread-${i}" hidden>
+            <section class="lore-content-section">${bodies[i]}</section>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  </div>
+  `
 }

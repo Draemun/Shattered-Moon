@@ -48,10 +48,10 @@ document.addEventListener('routeRendered', () => {
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       const i = btn.dataset.index
-      const body = document.getElementById(`arc0-thread-${i}`)
       const expanded = btn.getAttribute('aria-expanded') === 'true'
       btn.setAttribute('aria-expanded', String(!expanded))
       btn.classList.toggle('open', !expanded)
+      const body = btn.closest('.arc-thread').querySelector('.arc-thread-body')
       body.hidden = expanded
     })
   })

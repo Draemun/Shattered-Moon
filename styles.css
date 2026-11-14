@@ -949,9 +949,16 @@ footer p {
     overflow: hidden;
 }
 
+.combat-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 @media (max-width: 768px) {
     .combat-table {
         font-size: 0.65rem;
+        min-width: 500px;
     }
     
     .combat-table th,
@@ -1888,8 +1895,15 @@ footer p {
     margin-top: 0;
 }
 
+.lore-content-section .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 .lore-content-section table {
     width: 100%;
+    min-width: 500px;
     border-collapse: collapse;
     margin: 16px 0;
     background: rgba(25, 20, 35, 0.7);
@@ -2246,7 +2260,6 @@ footer p {
 .arc-thread {
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    overflow: hidden;
     transition: border-color 0.2s;
 }
 
@@ -2292,9 +2305,15 @@ footer p {
 }
 
 .arc-thread-body {
-    padding: 20px 24px;
     background: var(--bg-dark);
     border-top: 1px solid var(--border-color);
+}
+
+.arc-thread-body .lore-content-section {
+    margin-bottom: 0;
+    border-radius: 0 0 8px 8px;
+    border: none;
+    box-shadow: none;
 }
 
 .arc-thread-body p {

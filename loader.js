@@ -2,7 +2,7 @@ async function loadMd(path) {
   const res = await fetch(path)
   if (!res.ok) return `<p style="color:var(--accent-red)">Failed to load content.</p>`
   const text = await res.text()
-  return marked.parse(text)
+  return marked.parse(text).replace(/<table>/g, '<div class="table-wrap"><table>').replace(/<\/table>/g, '</table></div>')
 }
 
 function mdPage(wrapperClass, fetchFn) {
