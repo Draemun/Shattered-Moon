@@ -46,6 +46,35 @@
 | Offensive Boost | Tera-type moves powered up + access to Tera Blast |
 | Duration | Until battle ends, defeat, or deactivation |
 
+# REACTOR CORE
+
+A **Reactor Core** is a stabilized crystal formed when a Higher Soul is successfully unsplintered. Damaged fragments of the core forcibly pull themselves back together and the result is a physical crystalline formation.
+
+This gimmick is avaiable only to unsplintered Higher Souls by default.
+
+| Details | Information |
+|---|---|
+| Type | Crystal-Like, Higher Soul only |
+| Requirement | Higher Soul (unsplintered) |
+| Stat Effect | Maintains maximum 4,000 stat ceiling |
+| Drawback | Prevents use of Mega Evolution, Z-Moves, Dynamax/Gigantamax, and Terastallization, but Laquium and Rakurium can still be used |
+| Removal | Can be voluntarily removed before an RP, losing the Reactor Core stat benefits but regain access to all normal gimmicks |
+
+### Description
+
+The Reactor Core continuously feeds stabilized Infinity Energy through the user's body, allowing them to maintain power beyond what ordinary Pokémon can safely sustain. As long as their Core remains intact and the Reactor is used, the Higher Soul stays at a permanent enhanced state.
+
+However, the Reactor Core monopolizes the user's bio-energy system. Attempting to channel another battle gimmick would destabilize the crystal construct entirely. For this reason, 'mons using a Reactor Core cannot activate standard gimmicks.
+
+Some willingly remove their Reactor Core. Doing so reduces their overall power but restores their ability to utilize more conventional battle techniques such as Mega Evolution, Dynamax, Terastallization, or Z-Moves.
+
+### Tl;Dr
+
+- Reactor Core and battle gimmicks are mutually exclusive.
+- Reactor Core may be used alongside **Laquium** or **Rakurium**.
+- The crystal's appearance is unique to the individual, but always manifests as one. 
+
+
 # LAQUIUM
 
 Laquium copies the sheer power of Ferox energy. Item slot.
@@ -97,6 +126,7 @@ During the active phase the character does not feel injuries. The wounds only re
 | Turn 5 | 1-5 hits allies, rest is safe |
 
 *Use a second dice to determine which ally is struck on a hit. Counter resets at the start of each new active phase.*
+
 
 # FEROX
 
