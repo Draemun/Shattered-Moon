@@ -48,7 +48,7 @@
 
 # REACTOR CORE
 
-A **Reactor Core** is a stabilized crystal formed when a Higher Soul is successfully unsplintered. Damaged fragments of the core forcibly pull themselves back together and the result is a physical crystalline formation.
+A Reactor Core is a stabilized crystal formed when a Higher Soul is successfully unsplintered. Damaged fragments of the core forcibly pull themselves back together and the result is a physical crystalline formation.
 
 This gimmick is avaiable only to unsplintered Higher Souls by default.
 
