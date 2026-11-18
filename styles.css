@@ -986,13 +986,17 @@ footer p {
 
 .combat-table td {
     padding: 10px 12px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--accent-purple);
     color: var(--text-secondary);
     font-size: 0.95rem;
 }
 
 .combat-table tr:last-child td {
     border-bottom: none;
+}
+
+.combat-table td + td {
+    border-left: 1px solid var(--accent-purple);
 }
 
 .category-grid {
@@ -1076,7 +1080,7 @@ footer p {
     width: 45px;
     height: 45px;
     background: var(--bg-secondary);
-    border: 3px solid var(--accent-purple);
+    border: 2px solid var(--accent-purple);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1529,7 +1533,7 @@ footer p {
 }
 
 .issue-bar {
-    border-bottom: 3px solid var(--accent-purple);
+    border-bottom: 2px solid var(--accent-purple);
     margin-bottom: 2rem;
     padding-bottom: 0.3rem;
     font-size: 11px;
@@ -1603,7 +1607,7 @@ footer p {
 }
 
 .pull-quote {
-    border-left: 3px solid var(--accent-purple);
+    border-left: 2px solid var(--accent-purple);
     padding: 0.5rem 0 0.5rem 1rem;
     margin: 1.2rem 0;
     font-style: italic;
@@ -1615,7 +1619,7 @@ footer p {
 
 .section-rule {
     border: none;
-    border-top: 3px solid var(--accent-purple);
+    border-top: 2px solid var(--accent-purple);
     margin: 2.5rem 0 2rem;
     box-shadow: 0 0 10px var(--glow-purple);
 }
@@ -1932,6 +1936,14 @@ footer p {
     border-bottom: none;
 }
 
+.lore-content-section .combat-table td {
+    border-bottom: 1px solid var(--accent-purple);
+}
+
+.lore-content-section .combat-table tr:last-child td {
+    border-bottom: none;
+}
+
 .lore-content-section ul,
 .lore-content-section ol {
     padding-left: 0;
@@ -2011,7 +2023,7 @@ footer p {
 }
 
 .lore-content-section blockquote {
-    border-left: 3px solid var(--accent-purple);
+    border-left: 2px solid var(--accent-purple);
     padding: 8px 16px;
     margin: 16px 0;
     color: var(--text-primary);
@@ -2150,6 +2162,8 @@ footer p {
         display: none;
     }
 }
+
+.arc-index {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;

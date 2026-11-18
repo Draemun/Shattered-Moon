@@ -52,7 +52,7 @@ const splintersPage = `
         <li>Death by splintered soul (you're stuck in the Endless Moment)</li>
       </ul>
 
-      <table class="combat-table">
+      <div class="combat-table-wrap"><table class="combat-table">
         <tr><th>Entity (Type)</th><th>Description</th></tr>
         <tr>
           <td>The Ashes (Husk)</td>
@@ -80,7 +80,7 @@ const splintersPage = `
             <p>The NIRs trapped in the Endless Moment are whole within that dimension. Their consciousness exists fully in the frozen moment, but can only partially project into physical reality.</p>
           </td>
         </tr>
-      </table>
+      </table></div>
     </section>
 
     <section class="lore-content-section">
@@ -93,7 +93,7 @@ const splintersPage = `
         <li>Death by legendary splinter (you're stuck in the Endless Moment)</li>
       </ul>
 
-      <table class="combat-table">
+      <div class="combat-table-wrap"><table class="combat-table">
         <tr><th>Entity (Type)</th><th>Description</th></tr>
         <tr>
           <td>The Silhouette (Echo)</td>
@@ -133,7 +133,7 @@ const splintersPage = `
               <li>They cannot attack unless a Thorn Weaver is present. Then they're vicious, warding off nightmares and shielding dreamers</li>
             </ul>
             <p>Some believe they are splinters of something that once knew how to help, desperately trying to remember what that felt like. They are hope persisting even in corruption, consciousness clinging to purpose despite losing the means to fulfill it.</p>
-            <p><a href="https://discord.com/channels/1426570529200017549/1462048859567165501" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">Read here for more information</a></p>
+            <p><a href="#entity-faraway" onclick="setActive('entity-faraway')" style="color: var(--accent-cyan); text-decoration: underline;">Read here for more information</a></p>
           </td>
         </tr>
         <tr>
@@ -148,10 +148,10 @@ const splintersPage = `
               <li>Direct physical harm manifesting from dreams</li>
             </ul>
             <p>Thorn Weavers are classified as high-threat entities. Encounters frequently result in death. Their relationship with Faraways is particularly interesting. The presence of a Thorn Weaver causes Faraways to become protective rather than passive, suggesting some remnant of the original Cresselia-Darkrai opposition persists even in corruption.</p>
-            <p><a href="https://discord.com/channels/1426570529200017549/1463164794713411687" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">Read here for more information</a></p>
+            <p><a href="#entity-thorn-weaver" onclick="setActive('entity-thorn-weaver')" style="color: var(--accent-cyan); text-decoration: underline;">Read here for more information</a></p>
           </td>
         </tr>
-      </table>
+      </table></div>
       
       <p class="small-text">*Hetzer + Weaver is one character</p>
       <p>All corrupted entities can worsen or be stabilized/managed depending on intervention and choice.</p>
