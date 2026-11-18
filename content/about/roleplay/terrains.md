@@ -12,35 +12,35 @@ They deal chip damage to Splintered souls until their effect wears off and have 
 
 | Terrain | Effects |
 |---|---|
-| Electric Terrain | Electric-type moves increase in base power by 1.5x / Prevents sleep and Yawn effects |
-| Grassy Terrain | Grass-type moves increase in base power by 1.5x / Fire-type moves increase in base power by 1.5x / Restores 1/16 max HP per turn |
-| Misty Terrain | Dragon-type moves decrease in base power by 0.5x / Fairy-type Pokémon's Defenses boosted by 1.5x / Prevents status conditions and confusion |
-| Psychic Terrain | Psychic-type moves increase in base power by 1.5x / Priority attacks fail |
+| Electric Terrain | <ul><li>Electric-type moves increase in base power by 1.5x</li><li>Prevents sleep and Yawn effects</li></ul> |
+| Grassy Terrain | <ul><li>Grass-type moves increase in base power by 1.5x</li><li>Fire-type moves increase in base power by 1.5x</li><li>Restores 1/16 max HP per turn</li></ul> |
+| Misty Terrain | <ul><li>Dragon-type moves decrease in base power by 0.5x</li><li>Fairy-type Pokémon's Defenses boosted by 1.5x</li><li>Prevents status conditions and confusion</li></ul> |
+| Psychic Terrain | <ul><li>Psychic-type moves increase in base power by 1.5x</li><li>Priority attacks fail</li></ul> |
 
 # ELEMENTAL TERRAINS
 
 | Terrain | Effects |
 |---|---|
-| Burning Field | Fire-type moves increase in base power by 1.5x / Grass-type moves decrease in base power by 0.5x / Ice-type moves decrease in base power by 0.5x / Prevents freeze status |
-| Ice Field | Ice-type moves increase in base power by 1.5x / Fire-type moves decrease in base power by 0.5x / Ice-type Pokémon's Defenses boosted by 1.5x when hail is active / Burn damage is halved / Hail lasts 8 turns |
-| Water Surface | Water-type moves increase in base power by 1.5x / Electric-type moves increase in base power by 1.5x / Fire-type moves decrease in base power by 0.5x / Speed decreased by 0.75x (except Water-types) / Ground-type attacks always fail |
-| Swamp Field | Poison-type moves increase in base power by 1.5x / All Pokémon have Speed lowered by 1 stage at end of turn (except Quick Feet, Swift Swim, Clear Body, White Smoke) / Sleeping Pokémon take damage (except Magic Guard) |
-| Desert Field | Rock-type moves increase in base power by 1.5x / Water-type moves decrease in base power by 0.5x / Electric-type moves decrease in base power by 0.5x / Ground-type Pokémon's Defenses boosted by 1.5x / Harsh sunlight and sandstorm last 8 turns |
-| Ruined Terrain | Dark-type Pokémon's Defenses boosted by 1.5x / Ghost-type Pokémon's Defenses boosted by 1.5x |
-| Arenaria Terrain | Rock-type Defenses increase by 1.5x / Sound-based moves increase in base power by 1.5x / Flying-type moves decrease in base power by 0.5x / Ground-type moves can hit airborne Pokémon |
-| Crystal Terrain | Psychic-type moves increase in base power by 1.5x / Dragon-type moves increase in base power by 1.5x / Psychic/Dragon Defenses increase by 1.5x |
-| Dragon's Reign | Dragon-type moves increase in base power by 1.5x / Fire-type moves increase in base power by 1.5x / Water-type moves decrease in base power by 0.5x / Ice-type moves decrease in base power by 0.5x |
-| Frozen Edge | Ice-type moves increase in base power by 1.5x / Flying-type moves increase in base power by 1.5x / Fire-type moves decrease in base power by 0.5x / Ice-type Pokémon's Defenses boosted by 1.5x when hail is active / Harsh sunlight and hail last 8 turns |
-| Swarm Terrain | Bug-type moves increase in base power by 1.5x / Grass-type moves decrease in base power by 0.5x / Fighting-type moves decrease in base power by 0.5x |
-| Wasteland | Fighting-type moves increase in base power by 1.5x / Shell Bell restores HP equal to 25% of damage dealt / Sandstorm lasts 8 turns |
-| Starlight Arena | Dark-type moves increase in base power by 1.5x / Psychic-type moves increase in base power by 1.5x / Fairy-type moves increase in base power by 1.5x / All base power boosts cancelled if any weather is active |
-| Steel Terrain | Steel-type moves increase in base power by 1.5x / Electric-type moves increase in base power by 1.5x / Fire-type moves decrease in base power by 0.5x / Steel-type Pokémon's Defenses boosted by 1.5x / Sandstorm lasts 8 turns |
-| Aerial Terrain | Flying-type moves increase in base power by 1.5x / Ground-type moves always fail / Rock-type moves decrease in base power by 0.5x / All Pokémon treated as airborne / Tailwind lasts 4 turns |
-| Rainbow Field | Normal-type moves increase in base power by 1.5x and gain a random secondary type (roll 1d18 each use) / Chances of moves having additional effects doubled (does not stack with Serene Grace) / Sleeping Pokémon restore 1/16 max HP per turn |
+| Burning Field | <ul><li>Fire-type moves increase in base power by 1.5x</li><li>Grass-type moves decrease in base power by 0.5x</li><li>Ice-type moves decrease in base power by 0.5x</li><li>Prevents freeze status</li></ul> |
+| Ice Field | <ul><li>Ice-type moves increase in base power by 1.5x</li><li>Fire-type moves decrease in base power by 0.5x</li><li>Ice-type Pokémon's Defenses boosted by 1.5x when hail is active</li><li>Burn damage is halved</li><li>Hail lasts 8 turns</li></ul> |
+| Water Surface | <ul><li>Water-type moves increase in base power by 1.5x</li><li>Electric-type moves increase in base power by 1.5x</li><li>Fire-type moves decrease in base power by 0.5x</li><li>Speed decreased by 0.75x (except Water-types)</li><li>Ground-type attacks always fail</li></ul> |
+| Swamp Field | <ul><li>Poison-type moves increase in base power by 1.5x</li><li>All Pokémon have Speed lowered by 1 stage at end of turn (except Quick Feet, Swift Swim, Clear Body, White Smoke)</li><li>Sleeping Pokémon take damage (except Magic Guard)</li></ul> |
+| Desert Field | <ul><li>Rock-type moves increase in base power by 1.5x</li><li>Water-type moves decrease in base power by 0.5x</li><li>Electric-type moves decrease in base power by 0.5x</li><li>Ground-type Pokémon's Defenses boosted by 1.5x</li><li>Harsh sunlight and sandstorm last 8 turns</li></ul> |
+| Ruined Terrain | <ul><li>Dark-type Pokémon's Defenses boosted by 1.5x</li><li>Ghost-type Pokémon's Defenses boosted by 1.5x</li></ul> |
+| Arenaria Terrain | <ul><li>Rock-type Defenses increase by 1.5x</li><li>Sound-based moves increase in base power by 1.5x</li><li>Flying-type moves decrease in base power by 0.5x</li><li>Ground-type moves can hit airborne Pokémon</li></ul> |
+| Crystal Terrain | <ul><li>Psychic-type moves increase in base power by 1.5x</li><li>Dragon-type moves increase in base power by 1.5x</li><li>Psychic/Dragon Defenses increase by 1.5x</li></ul> |
+| Dragon's Reign | <ul><li>Dragon-type moves increase in base power by 1.5x</li><li>Fire-type moves increase in base power by 1.5x</li><li>Water-type moves decrease in base power by 0.5x</li><li>Ice-type moves decrease in base power by 0.5x</li></ul> |
+| Frozen Edge | <ul><li>Ice-type moves increase in base power by 1.5x</li><li>Flying-type moves increase in base power by 1.5x</li><li>Fire-type moves decrease in base power by 0.5x</li><li>Ice-type Pokémon's Defenses boosted by 1.5x when hail is active</li><li>Harsh sunlight and hail last 8 turns</li></ul> |
+| Swarm Terrain | <ul><li>Bug-type moves increase in base power by 1.5x</li><li>Grass-type moves decrease in base power by 0.5x</li><li>Fighting-type moves decrease in base power by 0.5x</li></ul> |
+| Wasteland | <ul><li>Fighting-type moves increase in base power by 1.5x</li><li>Shell Bell restores HP equal to 25% of damage dealt</li><li>Sandstorm lasts 8 turns</li></ul> |
+| Starlight Arena | <ul><li>Dark-type moves increase in base power by 1.5x</li><li>Psychic-type moves increase in base power by 1.5x</li><li>Fairy-type moves increase in base power by 1.5x</li><li>All base power boosts cancelled if any weather is active</li></ul> |
+| Steel Terrain | <ul><li>Steel-type moves increase in base power by 1.5x</li><li>Electric-type moves increase in base power by 1.5x</li><li>Fire-type moves decrease in base power by 0.5x</li><li>Steel-type Pokémon's Defenses boosted by 1.5x</li><li>Sandstorm lasts 8 turns</li></ul> |
+| Aerial Terrain | <ul><li>Flying-type moves increase in base power by 1.5x</li><li>Ground-type moves always fail</li><li>Rock-type moves decrease in base power by 0.5x</li><li>All Pokémon treated as airborne</li><li>Tailwind lasts 4 turns</li></ul> |
+| Rainbow Field | <ul><li>Normal-type moves increase in base power by 1.5x and gain a random secondary type (roll 1d18 each use)</li><li>Chances of moves having additional effects doubled (does not stack with Serene Grace)</li><li>Sleeping Pokémon restore 1/16 max HP per turn</li></ul> |
 
 # SPECIAL TERRAINS
 
 | Terrain | Effects |
 |---|---|
-| Holy Field | Normal-type moves increase in base power by 1.5x / Fairy-type moves increase in base power by 1.5x / Dark-type moves decrease in base power by 0.5x / Ghost-type moves decrease in base power by 0.5x / Normal-type moves hit Ghost types super-effectively / Pokémon cannot hit allies with damaging moves |
-| New World | Prevents all terrain changes / Prevents all weather changes and terminates active weather / All type effectiveness neutralized (all moves deal neutral damage) / No chip damage |
+| Holy Field | <ul><li>Normal-type moves increase in base power by 1.5x</li><li>Fairy-type moves increase in base power by 1.5x</li><li>Dark-type moves decrease in base power by 0.5x</li><li>Ghost-type moves decrease in base power by 0.5x</li><li>Normal-type moves hit Ghost types super-effectively</li><li>Pokémon cannot hit allies with damaging moves</li></ul> |
+| New World | <ul><li>Prevents all terrain changes</li><li>Prevents all weather changes and terminates active weather</li><li>All type effectiveness neutralized (all moves deal neutral damage)</li><li>No chip damage</li></ul> |

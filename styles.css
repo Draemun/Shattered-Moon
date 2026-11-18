@@ -1936,6 +1936,10 @@ footer p {
     border-bottom: none;
 }
 
+.lore-content-section td ul {
+    margin: 0;
+}
+
 .lore-content-section .combat-table td {
     border-bottom: 1px solid var(--accent-purple);
 }
@@ -2318,16 +2322,34 @@ footer p {
     transform: rotate(180deg);
 }
 
+.arc-thread-btn {
+    border-radius: 8px;
+}
+
+.arc-thread-btn.open {
+    border-radius: 8px 8px 0 0;
+}
+
 .arc-thread-body {
     background: var(--bg-dark);
     border-top: 1px solid var(--border-color);
+    border-radius: 0 0 8px 8px;
+    padding: 20px 24px;
 }
 
-.arc-thread-body .lore-content-section {
-    margin-bottom: 0;
-    border-radius: 0 0 8px 8px;
-    border: none;
-    box-shadow: none;
+@media (max-width: 600px) {
+    .arc-thread-btn {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+
+    .arc-thread-body {
+        padding: 16px 14px;
+    }
+
+    .arc-summary-card {
+        padding: 20px 16px;
+    }
 }
 
 .arc-thread-body p {
