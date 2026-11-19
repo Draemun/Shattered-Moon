@@ -446,3 +446,42 @@ function toggleSubmenu(e, page) {
     setActive(page)
   }
 }
+
+// Column-only selection in tables: start selecting in a cell and only that column can be selected/copied
+function lockTableColumn(e) {
+  document.querySelectorAll('.col-locked').forEach(c => c.classList.remove('col-locked'))
+  const cell = e.target.closest && e.target.closest('td, th')
+  if (!cell) return
+  const idx = cell.cellIndex
+  cell.closest('table').querySelectorAll('tr').forEach(tr => {
+    for (const c of tr.cells) if (c.cellIndex !== idx) c.classList.add('col-locked')
+  })
+}
+document.addEventListener('mousedown', lockTableColumn)
+document.addEventListener('touchstart', lockTableColumn, { passive: true })
+
+document.addEventListener('copy', e => {
+  const sel = window.getSelection()
+  if (!sel.rangeCount) return
+  const range = sel.getRangeAt(0)
+  const startCell = range.startContainer.parentElement?.closest('td, th')
+  const table = startCell?.closest('table')
+  if (!table || !table.querySelector('.col-locked')) return
+  const idx = startCell.cellIndex
+  const lines = []
+  table.querySelectorAll('tr').forEach(tr => {
+    const c = tr.cells[idx]
+    if (!c || !range.intersectsNode(c)) return
+    const r = document.createRange()
+    r.selectNodeContents(c)
+    if (range.compareBoundaryPoints(Range.START_TO_START, r) > 0) r.setStart(range.startContainer, range.startOffset)
+    if (range.compareBoundaryPoints(Range.END_TO_END, r) < 0) r.setEnd(range.endContainer, range.endOffset)
+    const frag = r.cloneContents()
+    frag.querySelectorAll('br').forEach(br => br.replaceWith('\n'))
+    const t = frag.textContent.trim()
+    if (t) lines.push(t)
+  })
+  if (!lines.length) return
+  e.clipboardData.setData('text/plain', lines.join('\n'))
+  e.preventDefault()
+})

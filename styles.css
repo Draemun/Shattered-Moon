@@ -2503,3 +2503,9 @@ footer p {
   .tl-era { font-size: 8px; letter-spacing: 0.05em; }
   .tl-panel { padding: 1.25rem; }
 }
+
+/* Column-only selection in tables (see script.js) */
+.col-locked {
+  -webkit-user-select: none;
+  user-select: none;
+}

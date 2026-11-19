@@ -19,6 +19,8 @@
 
 # PROGRESSION REWARDS
 
+Note. If your character is splintered, but doesn't want to harm others, they're eligible for some "Non-Corrupted" items.
+
 ### Goal One: 600 BST
 
 - 5x Oran Berries
@@ -35,7 +37,7 @@
 
 | For Non-Corrupted | For Soul Splinters |
 |---|---|
-| 1x Nexus Core Fragment (Temporary immunity to corruption spread for 3 turns) | 1x Resonance Amplifier (15% damage vs Non-Corrupted for 3 turns) |
+| 1x Nexus Core Fragment (Temporary immunity to corruption spread  - 3 turns. <br> You need 3 to make a whole Core or 9 Void Echoes) | 1x Resonance Amplifier (+2 atk and sp.atk vs Non-Corrupted for 3 turns) |
 | 5x Sitrus Berries | 5x Sitrus Berries |
 | 5x Reviver Seeds | 5x Reviver Seeds |
 | 1x Standard Weapon (Choice of melee or ranged, lasts 10 turns) | 1x Standard Weapon (Choice of melee or ranged, lasts 10 turns) |
@@ -75,7 +77,7 @@ Choose ONE specialized combat style:
 | 1x Unbreakable Weapon | 1x Unbreakable Weapon |
 | 4x Void Shards | 4x Void Shards |
 | 10x Reviver Seeds | 10x Reviver Seeds |
-| Corruption Immunity Charm (Increases Call of the Void threshold to 15 strikes) | Corruption Mastery (Summons Sub-Anomaly 1 that attacks Non-Corrupted only for 5 turns, once per rp) |
+| Corruption Immunity Charm (Increases Call of the Void threshold to 15 strikes) | Corruption Mastery (Summons Sub-Anomaly 1 that attacks Non-Corrupted (can also attack splinters) only for 5 turns, once per rp) |
 | 1x Gimmick (Choice of Mega Stone, Tera Orb, Z-Crystal, or Dynamax Band) | 1x Gimmick (Choice of Mega Stone, Tera Orb, Z-Crystal, or Dynamax Band) |
 | 5x Omniseeds (Omniboost. One every 5 turns) | 5x Omniseeds (Omniboost. One every 5 turns) |
 | 5th Move Slot | 5th Move Slot |
